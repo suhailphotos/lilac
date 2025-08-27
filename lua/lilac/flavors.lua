@@ -9,6 +9,11 @@ return {
     ["id"] = "lilac-nightbloom",
     ["label"] = "Nightbloom",
     ["variant"] = "mocha"
+  },
+  {
+    ["id"] = "lilac-pearlbloom",
+    ["label"] = "Pearlbloom",
+    ["variant"] = "latte"
   }
 },
   index = {
@@ -121,6 +126,69 @@ return {
     ["highlights"] = {
       ["@variable.builtin.python"] = {
         ["fg"] = "#97cde8",
+        ["italic"] = true
+      }
+    }
+  },
+  ["lilac-pearlbloom"] = {
+    ["variant"] = "latte",
+    ["cat_overrides"] = {
+      ["rosewater"] = "#dc8a78",
+      ["flamingo"] = "#dd7878",
+      ["pink"] = "#ea76cb",
+      ["mauve"] = "#8839ef",
+      ["red"] = "#d20f39",
+      ["maroon"] = "#e64553",
+      ["peach"] = "#fe640b",
+      ["yellow"] = "#df8e1d",
+      ["green"] = "#40a02b",
+      ["teal"] = "#179299",
+      ["sky"] = "#04a5e5",
+      ["sapphire"] = "#209fb5",
+      ["blue"] = "#1e66f5",
+      ["lavender"] = "#7287fd",
+      ["text"] = "#4c4f69",
+      ["subtext1"] = "#5c5f77",
+      ["subtext0"] = "#6c6f85",
+      ["overlay2"] = "#7c7f93",
+      ["overlay1"] = "#8c8fa1",
+      ["overlay0"] = "#9ca0b0",
+      ["surface2"] = "#acb0be",
+      ["surface1"] = "#bcc0cc",
+      ["surface0"] = "#ccd0da",
+      ["base"] = "#eff1f5",
+      ["mantle"] = "#e6e9ef",
+      ["crust"] = "#dce0e8"
+    },
+    ["terminal"] = {
+      ["colors"] = {
+        "#b4d8fd",
+        "#ad1805",
+        "#355d61",
+        "#78492a",
+        "#0058a1",
+        "#9c2191",
+        "#703daa",
+        "#000000",
+        "#8a99a6",
+        "#ad1805",
+        "#174145",
+        "#78492a",
+        "#003f73",
+        "#9c2191",
+        "#441ea1",
+        "#000000"
+      },
+      ["background"] = "#f2f3f5",
+      ["foreground"] = "#3e3f49",
+      ["cursor"] = "#362f2e",
+      ["cursor_text"] = "#dce0e8",
+      ["selection_background"] = "#bcc0cc",
+      ["selection_foreground"] = "#4c4f69"
+    },
+    ["highlights"] = {
+      ["@variable.builtin.python"] = {
+        ["fg"] = "#67a1be",
         ["italic"] = true
       }
     }

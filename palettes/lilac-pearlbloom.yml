@@ -1,0 +1,68 @@
+id: lilac-pearlbloom
+label: Pearlbloom
+variant: latte  # Catppuccin base
+
+terminal:
+  colors:
+    - "#b4d8fd"  # 0
+    - "#ad1805"  # 1
+    - "#355d61"  # 2
+    - "#78492a"  # 3
+    - "#0058a1"  # 4
+    - "#9c2191"  # 5
+    - "#703daa"  # 6
+    - "#000000"  # 7
+    - "#8a99a6"  # 8
+    - "#ad1805"  # 9
+    - "#174145"  # 10
+    - "#78492a"  # 11
+    - "#003f73"  # 12
+    - "#9c2191"  # 13
+    - "#441ea1"  # 14
+    - "#000000"  # 15
+  background: "#f2f3f5"
+  foreground: "#3e3f49"
+  cursor:     "#362f2e"
+  cursor_text: "#dce0e8"
+  selection_background: "#bcc0cc"
+  selection_foreground: "#4c4f69"
+
+catppuccin_overrides:
+  rosewater:  "#dc8a78"
+  flamingo:   "#dd7878"
+  pink:       "#ea76cb"
+  mauve:      "#8839ef"
+  red:        "#d20f39"
+  maroon:     "#e64553"
+  peach:      "#fe640b"
+  yellow:     "#df8e1d"
+  green:      "#40a02b"
+  teal:       "#179299"
+  sky:        "#04a5e5"
+  sapphire:   "#209fb5"
+  blue:       "#1e66f5"
+  lavender:   "#7287fd"
+  text:       "#4c4f69"
+  subtext1:   "#5c5f77"
+  subtext0:   "#6c6f85"
+  overlay2:   "#7c7f93"
+  overlay1:   "#8c8fa1"
+  overlay0:   "#9ca0b0"
+  surface2:   "#acb0be"
+  surface1:   "#bcc0cc"
+  surface0:   "#ccd0da"
+  base:       "#eff1f5"
+  mantle:     "#e6e9ef"
+  crust:      "#dce0e8"
+
+
+tmux:
+  status_fg: "#7c87a8"
+  status_bg: "#1a1b25"
+  message_fg: "#cfd6f5"
+  message_bg: "#4c4e69"
+  pane_border: "#4c4e69"
+  pane_active_border: "#87abf5"
+
+highlights:
+  "@variable.builtin.python": { fg: "#67a1be", italic: true }
