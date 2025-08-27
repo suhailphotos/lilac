@@ -53,7 +53,7 @@ catppuccin_overrides:
   surface0:  "#414559"
   base:      "#303446"
   mantle:    "#2a2b3f"
-  crust:     "#15151f"
+  crust:     "#1a1a27"
 
 tmux:
   status_fg: "#7c87a8"
