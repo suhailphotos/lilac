@@ -79,7 +79,7 @@ local COMMON_HL = {
     ["italic"] = true
   },
   ["StatusLine"] = {
-    ["fg"] = "#5f617b",
+    ["fg"] = "@C.overlay0",
     ["bg"] = "#1a1a27",
     ["bold"] = false
   },
