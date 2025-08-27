@@ -29,3 +29,13 @@ end, {})
 vim.api.nvim_create_user_command("LilacTransparentToggle", function()
   lilac.toggle_transparent()
 end, {})
+
+vim.api.nvim_create_user_command("LilacStatus", function()
+  local name = vim.g.colors_name or "(none)"
+  local okF, F = pcall(require, "lilac.flavors")
+  local flav = (okF and F.index[name] and F.index[name].variant) or "?"
+  local trans = "?"
+  local okL, L = pcall(require, "lilac")
+  if okL and L._opts then trans = L._opts.transparent and "on" or "off" end
+  vim.notify(("Lilac: %s  •  base=%s  •  transparent=%s"):format(name, flav, trans))
+end, {})
