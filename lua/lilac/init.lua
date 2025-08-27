@@ -80,7 +80,7 @@ local COMMON_HL = {
   },
   ["StatusLine"] = {
     ["fg"] = "#848faa",
-    ["bg"] = "#1e1f2f",
+    ["bg"] = "#3f3f54",
     ["bold"] = false
   },
   ["StatusLineNC"] = {
