@@ -179,7 +179,7 @@ return {
         "#441ea1",
         "#000000"
       },
-      ["background"] = "#f6f7f9",
+      ["background"] = "#f3f3f4",
       ["foreground"] = "#3e3f49",
       ["cursor"] = "#362f2e",
       ["cursor_text"] = "#dce0e8",
