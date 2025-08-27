@@ -96,9 +96,9 @@ local COMMON_HL = {
     ["bg"] = "NONE"
   },
   ["ModeMsg"] = {
-    ["fg"] = "@C.green",
+    ["fg"] = "@C.subtext0",
     ["bg"] = "NONE",
-    ["bold"] = true
+    ["bold"] = false
   },
   ["MoreMsg"] = {
     ["fg"] = "@C.lavender",

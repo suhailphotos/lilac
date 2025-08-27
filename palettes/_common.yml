@@ -20,7 +20,7 @@ highlights:
   "StatusLineNC":         { fg: "@C.surface2", bg: "NONE" }
   "MsgArea":              { fg: "#848faa", bg: "NONE" }
   "MsgSeparator":         { fg: "@C.surface1", bg: "NONE" }
-  "ModeMsg":              { fg: "@C.green",    bg: "NONE", bold: true }
+  "ModeMsg":              { fg: "@C.subtext0",    bg: "NONE", bold: false }
   "MoreMsg":              { fg: "@C.lavender", bg: "NONE" }
   "WarningMsg":           { fg: "@C.peach",    bg: "NONE" }
   "ErrorMsg":             { fg: "@C.red",      bg: "NONE" }
