@@ -16,7 +16,7 @@ highlights:
   "@variable.builtin.python":       { fg: "@C.teal",    italic: true }
 
   # UI (same spirit as your previous setup)
-  "StatusLine":           { fg: "#848faa", bg: "#1a1a27", bold: false }
+  "StatusLine":           { fg: "#84c4e69", bg: "#1a1a27", bold: false }
   "StatusLineNC":         { fg: "@C.surface2", bg: "NONE" }
   "MsgArea":              { fg: "#848faa", bg: "NONE" }
   "MsgSeparator":         { fg: "@C.surface1", bg: "NONE" }
