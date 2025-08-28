@@ -4,24 +4,24 @@ variant: latte  # Catppuccin base
 
 terminal:
   colors:
-    - "#b4d8fd"  # 0  (Xcode)
-    - "#ad1805"  # 1  (Xcode)
+    - "#d4dae0"  # 0  (Xcode)
+    - "#a3200f"  # 1  (Xcode)
     - "#355d61"  # 2  (Xcode)
-    - "#78492a"  # 3  (Xcode)
+    - "#8e3f0a"  # 3  (Xcode)
     - "#0058a1"  # 4  (Xcode)
     - "#9c2191"  # 5  (Xcode)
     - "#703daa"  # 6  (Xcode)
-    - "#000000"  # 7  (Xcode)
-    - "#8a99a6"  # 8  (Xcode)
-    - "#ad1805"  # 9  (Xcode)
+    - "#303132"  # 7  (Xcode)
+    - "#828588"  # 8  (Xcode)
+    - "#881203"  # 9  (Xcode)
     - "#174145"  # 10 (Xcode)
-    - "#78492a"  # 11 (Xcode)
+    - "#713d1b"  # 11 (Xcode)
     - "#003f73"  # 12 (Xcode)
     - "#9c2191"  # 13 (Xcode)
     - "#441ea1"  # 14 (Xcode)
-    - "#000000"  # 15 (Xcode)
-  background: "#f3f3f4"
-  foreground: "#3e3f49"
+    - "#050505"  # 15 (Xcode)
+  background: "#f1f1f3"
+  foreground: "#0c0c0c"
   cursor:     "#362f2e"
   cursor_text: "#dce0e8"
   selection_background: "#bcc0cc"
@@ -30,35 +30,35 @@ terminal:
 catppuccin_overrides:
   # --- pink/magenta/primary hues (overridden by Xcode where it maps cleanly) ---
   pink:       "#9c2191"  # Xcode ANSI 5 (magenta) ⟵ replaces Latte pink
-  mauve:      "#a23d99"  # Adjusted Hue
-  red:        "#ad1805"  # Xcode ANSI 1 (red)
-  yellow:     "#78492a"  # Xcode ANSI 3 (yellow/brown)
+  mauve:      "#86147c"  # Adjusted Hue
+  red:        "#a3200f"  # Xcode ANSI 1 (red)
+  yellow:     "#8e3f0a"  # Xcode ANSI 3 (yellow/brown)
   green:      "#355d61"  # Xcode ANSI 2 (green/teal)
   sky:        "#003f73"  # Xcode ANSI 12 (bright blue)
   blue:       "#0058a1"  # Xcode ANSI 4 (blue)
   lavender:   "#703daa"  # Xcode ANSI 6 (cyan in Xcode palette; violet-leaning)
 
   # --- kept from Catppuccin Latte for saturated, light-theme-friendly accents ---
-  rosewater:  "#ce644d"  # closest warm rose; already strong on light bg
-  flamingo:   "#d46666"  # deeper salmon; complements Xcode red
-  maroon:     "#b6512c"  # Latte (kept) — rich red-violet; distinct from primary red
-  peach:      "#be6836"  # Latte (kept) — vivid orange; pairs with Xcode “yellow”
-  teal:       "#168c92"  # Latte (kept) — dark teal; bridges Xcode green↔cyan gap
-  sapphire:   "#16889c"  # Latte (kept) — saturated blue-cyan; sits near Xcode blues
+  rosewater:  "#b93919"  # closest warm rose; already strong on light bg
+  flamingo:   "#b73427"  # deeper salmon; complements Xcode red
+  maroon:     "#9a4121"  # Latte (kept) — rich red-violet; distinct from primary red
+  peach:      "#9a4412"  # Latte (kept) — vivid orange; pairs with Xcode “yellow”
+  teal:       "#0f5f63"  # Latte (kept) — dark teal; bridges Xcode green↔cyan gap
+  sapphire:   "#0c6a7a"  # Latte (kept) — saturated blue-cyan; sits near Xcode blues
 
   # --- neutrals: keep Latte so the UI reads well on a light background ---
-  text:       "#4c4f69"  # Latte (neutral)
-  subtext1:   "#5c5f77"  # Latte (neutral)
-  subtext0:   "#6c6f85"  # Latte (neutral)
-  overlay2:   "#7c7f93"  # Latte (neutral)
+  text:       "#36373f"  # Latte (neutral)
+  subtext1:   "#494a59"  # Latte (neutral)
+  subtext0:   "#73737a"  # Latte (neutral)
+  overlay2:   "#666770"  # Latte (neutral)
   overlay1:   "#8c8fa1"  # Latte (neutral)
   overlay0:   "#9ca0b0"  # Latte (neutral)
-  surface2:   "#acb0be"  # Latte (neutral)
-  surface1:   "#bcc0cc"  # Latte (neutral)
-  surface0:   "#ccd0da"  # Latte (neutral)
-  base:       "#eff1f5"  # Latte (neutral)
-  mantle:     "#e6e9ef"  # Latte (neutral)
-  crust:      "#dce0e8"  # Latte (neutral)
+  surface2:   "#b5b7be"  # Latte (neutral)
+  surface1:   "#c6c7cc"  # Latte (neutral)
+  surface0:   "#d4d6da"  # Latte (neutral)
+  base:       "#e9eaed"  # Latte (neutral)
+  mantle:     "#eaebef"  # Latte (neutral)
+  crust:      "#e2e4e8"  # Latte (neutral)
 
 tmux:
   status_fg: "#7c87a8"
