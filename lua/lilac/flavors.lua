@@ -65,7 +65,8 @@ return {
     },
     ["highlights"] = {
 
-    }
+    },
+    ["comment"] = nil
   },
   ["lilac-nightbloom"] = {
     ["variant"] = "mocha",
@@ -128,7 +129,8 @@ return {
         ["fg"] = "#97cde8",
         ["italic"] = true
       }
-    }
+    },
+    ["comment"] = "#787a8c"
   },
   ["lilac-pearlbloom"] = {
     ["variant"] = "latte",
@@ -191,7 +193,8 @@ return {
         ["fg"] = "#67a1be",
         ["italic"] = true
       }
-    }
+    },
+    ["comment"] = "#797b80"
   }
 }
 }

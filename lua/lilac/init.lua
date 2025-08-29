@@ -88,7 +88,7 @@ local COMMON_HL = {
     ["bg"] = "NONE"
   },
   ["MsgArea"] = {
-    ["fg"] = "#848faa",
+    ["fg"] = "@C.subtext1",
     ["bg"] = "NONE"
   },
   ["MsgSeparator"] = {
@@ -144,7 +144,7 @@ function M.load(id)
     custom_highlights = function(C)
       -- Variant-specific comment tone (mirrors your old behavior).
       local flav = (vim.g.catppuccin_flavour or cfg.variant):lower()
-      local comment_fg = (flav == "mocha") and "#6b7093" or "#848faa"
+      local comment_fg = cfg.comment or ((flav == "mocha") and "#6b7093" or "#848faa")
 
       -- Start with COMMON_HL (resolved)
       local ch = {}

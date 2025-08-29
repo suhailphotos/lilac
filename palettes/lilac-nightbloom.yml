@@ -1,6 +1,7 @@
 id: lilac-nightbloom
 label: Nightbloom
 variant: mocha  # Catppuccin base
+comment: "#787a8c"
 
 terminal:
   colors:

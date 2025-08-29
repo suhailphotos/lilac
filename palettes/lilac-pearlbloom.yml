@@ -1,6 +1,7 @@
 id: lilac-pearlbloom
 label: Pearlbloom
 variant: latte  # Catppuccin base
+comment: "#797b80"
 
 terminal:
   colors:

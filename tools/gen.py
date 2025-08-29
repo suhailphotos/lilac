@@ -101,6 +101,7 @@ def load_palettes():
             "cat_overrides": data.get("catppuccin_overrides", {}),
             "highlights": data.get("highlights", {}),
             "tmux": data.get("tmux", {}),
+            "comment": data.get("comment"),
         })
     return items
 
@@ -122,6 +123,7 @@ def gen_lua_core(items):
         "cat_overrides": it["cat_overrides"],
         "terminal": it["terminal"],
         "highlights": it["highlights"],
+        "comment": it.get("comment"),
     } for it in items }
     flavors_lua = "return {\n  list = " + lua_table(list_tbl) + ",\n  index = " + lua_table(index_tbl) + "\n}\n"
     write_text(OUT_NVIM_LUA / "flavors.lua", flavors_lua)
