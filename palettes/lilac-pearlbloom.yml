@@ -52,13 +52,13 @@ catppuccin_overrides:
   subtext0:   "#73737a"  # Latte (neutral)
   overlay2:   "#666770"  # Latte (neutral)
   overlay1:   "#8c8fa1"  # Latte (neutral)
-  overlay0:   "#9ca0b0"  # Latte (neutral)
+  overlay0:   "#676a75"  # Latte (neutral)
   surface2:   "#b5b7be"  # Latte (neutral)
   surface1:   "#c6c7cc"  # Latte (neutral)
   surface0:   "#d4d6da"  # Latte (neutral)
   base:       "#e9eaed"  # Latte (neutral)
   mantle:     "#eaebef"  # Latte (neutral)
-  crust:      "#e2e4e8"  # Latte (neutral)
+  crust:      "#dee0e4"  # Latte (neutral)
 
 tmux:
   status_fg: "#7c87a8"

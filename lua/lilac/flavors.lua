@@ -152,13 +152,13 @@ return {
       ["subtext0"] = "#73737a",
       ["overlay2"] = "#666770",
       ["overlay1"] = "#8c8fa1",
-      ["overlay0"] = "#9ca0b0",
+      ["overlay0"] = "#676a75",
       ["surface2"] = "#b5b7be",
       ["surface1"] = "#c6c7cc",
       ["surface0"] = "#d4d6da",
       ["base"] = "#e9eaed",
       ["mantle"] = "#eaebef",
-      ["crust"] = "#e2e4e8"
+      ["crust"] = "#dee0e4"
     },
     ["terminal"] = {
       ["colors"] = {
