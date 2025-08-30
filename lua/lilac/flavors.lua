@@ -131,7 +131,7 @@ return {
     ["highlights"] = {
 
     },
-    ["comment"] = "@ansi[8]",
+    ["comment"] = "#6d6c85",
     ["tmux"] = {
       ["status_fg"] = "#929ec3",
       ["status_bg"] = "#6d6c85",

@@ -204,29 +204,38 @@ def load_palettes():
 def gen_lua_core(items):
     common = load_common()
     common_highlights = common.get("highlights", {})
+
     template = env.get_template("lilac_init.lua.j2")
     body = template.render(common_highlights=common_highlights)
     write_text(OUT_NVIM_LUA / "init.lua", body)
 
-    # Prepare resolved flavors: resolve variables in overrides/tmux/highlights (but keep @C.* and @comment)
     index_tbl = {}
     list_tbl = []
     for it in items:
         pid = it["id"]
         list_tbl.append({"id": pid, "label": it["label"], "variant": it["variant"]})
+
         term = it["terminal"]
+
+        # NEW: resolve comment so @ansi[...] / blend(...) become hex here
+        resolved_comment = None
+        if it.get("comment") is not None:
+            resolved_comment = resolve_palette_value(it.get("comment"), term)
+
         overrides = resolve_mapping(it["cat_overrides"], term)
         tmux_map  = resolve_mapping(it["tmux"], term)
-        # For highlights: resolve only @ansi/@fg/.../blend; keep @C.* & @comment (handled in runtime Lua)
+
+        # Resolve @ansi/@fg/... in palette-specific highlights; keep @C.* and @comment for runtime
         highlights = {}
         for k, v in (it["highlights"] or {}).items():
             highlights[k] = resolve_palette_value(v, term)
+
         index_tbl[pid] = {
             "variant": it["variant"],
             "cat_overrides": overrides,
             "terminal": term,
             "highlights": highlights,
-            "comment": it.get("comment"),
+            "comment": resolved_comment,  # <-- use resolved value
             "tmux": tmux_map,
         }
 
