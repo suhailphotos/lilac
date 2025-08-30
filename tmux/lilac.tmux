@@ -11,7 +11,7 @@ if -b '[ "#{@@lilac_flavor}" = "mistbloom" ]' {
 }
 if -b '[ "#{@@lilac_flavor}" = "nightbloom" ]' {
   set -g status-style "fg=#929ec3,bg=#6d6c85"
-  set -g message-style "fg=#a6adc8,bg=#6d6c85"
+  set -g message-style "fg=#d1d9f6,bg=#6d6c85"
   set -g pane-border-style "fg=#6d6c85"
   set -g pane-active-border-style "fg=#a8d8ff"
   set -g status-left ""

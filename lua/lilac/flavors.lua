@@ -79,18 +79,18 @@ return {
   ["lilac-nightbloom"] = {
     ["variant"] = "mocha",
     ["cat_overrides"] = {
-      ["pink"] = "#e880df",
+      ["pink"] = "#d786d0",
       ["mauve"] = "#ffa6f8",
-      ["lavender"] = "#b39de5",
-      ["red"] = "#da709e",
+      ["lavender"] = "#b5a2da",
+      ["red"] = "#da78a3",
       ["maroon"] = "#ef86bd",
       ["yellow"] = "#edb087",
-      ["peach"] = "#e39092",
+      ["peach"] = "#e39495",
       ["green"] = "#82d2e1",
-      ["teal"] = "#a677dc",
+      ["teal"] = "#ac82dc",
       ["sky"] = "#a8d8ff",
-      ["sapphire"] = "#9298e3",
-      ["blue"] = "#7fbaeb",
+      ["sapphire"] = "#a0a0e0",
+      ["blue"] = "#93bfe3",
       ["text"] = "#cdd6f4",
       ["subtext1"] = "#bac2de",
       ["subtext0"] = "#a6adc8",
@@ -107,12 +107,12 @@ return {
     ["terminal"] = {
       ["colors"] = {
         "#1f1f2e",
-        "#da709e",
+        "#da78a3",
         "#82d2e1",
         "#edb087",
-        "#7fbaeb",
-        "#e880df",
-        "#a677dc",
+        "#93bfe3",
+        "#d786d0",
+        "#ac82dc",
         "#929ec3",
         "#6d6c85",
         "#ef86bd",
@@ -121,11 +121,11 @@ return {
         "#a8d8ff",
         "#ffa6f8",
         "#baa4f4",
-        "#e4e8f8"
+        "#d5dbf2"
       },
       ["background"] = "#14141a",
-      ["foreground"] = "#a6adc8",
-      ["cursor"] = "#a6adc8",
+      ["foreground"] = "#d1d9f6",
+      ["cursor"] = "#d1d9f6",
       ["cursor_text"] = "#ffffff"
     },
     ["highlights"] = {
@@ -135,7 +135,7 @@ return {
     ["tmux"] = {
       ["status_fg"] = "#929ec3",
       ["status_bg"] = "#6d6c85",
-      ["message_fg"] = "#a6adc8",
+      ["message_fg"] = "#d1d9f6",
       ["message_bg"] = "#6d6c85",
       ["pane_border"] = "#6d6c85",
       ["pane_active_border"] = "#a8d8ff"
