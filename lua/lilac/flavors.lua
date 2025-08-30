@@ -99,14 +99,14 @@ return {
       ["overlay0"] = "#6d6c85",
       ["surface2"] = "#585b70",
       ["surface1"] = "#45475a",
-      ["surface0"] = "#232329",
+      ["surface0"] = "#202029",
       ["base"] = "#1e1e2e",
       ["mantle"] = "#181825",
       ["crust"] = "#11111b"
     },
     ["terminal"] = {
       ["colors"] = {
-        "#232329",
+        "#202029",
         "#da709e",
         "#82d2e1",
         "#edb087",

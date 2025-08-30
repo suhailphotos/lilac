@@ -5,7 +5,7 @@ comment: "@ansi[8]"
 
 terminal:
   colors:
-    - "#232329"  # 0
+    - "#202029"  # 0
     - "#da709e"  # 1
     - "#82d2e1"  # 2
     - "#edb087"  # 3
