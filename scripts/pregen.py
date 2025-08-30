@@ -17,7 +17,7 @@ Examples:
     --out palettes/lilac-nightbloom.yml
 """
 from __future__ import annotations
-import argparse, json, os, sys, urllib.request
+import argparse, json, os, sys, urllib.request, re
 from typing import Dict, Any, List
 
 CATPP_JSON_URL = "https://raw.githubusercontent.com/catppuccin/palette/refs/heads/main/palette.json"
@@ -30,11 +30,33 @@ CAT_HUE_ORDER = [
     "green","teal","sky","sapphire","blue","lavender",
 ]
 
+# ---------- tolerant JSON reader (accepts empty/HTML/commented JSON) ----------
+_JS_LINE_COMMENTS = re.compile(r"^\s*//.*?$", re.MULTILINE)
+_JS_BLOCK_COMMENTS = re.compile(r"/\*.*?\*/", re.DOTALL)
+
+def _strip_jsonc(text: str) -> str:
+    text = _JS_BLOCK_COMMENTS.sub("", text)
+    text = _JS_LINE_COMMENTS.sub("", text)
+    return text
+
 def read_json(path: str) -> Dict[str, Any]:
     if path == "-":
-        return json.loads(sys.stdin.read())
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+        raw = sys.stdin.buffer.read().decode("utf-8-sig", errors="replace")
+    else:
+        with open(path, "rb") as f:
+            raw = f.read().decode("utf-8-sig", errors="replace")
+    if not raw.strip():
+        raise ValueError(f"Input file is empty: {path}")
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        try:
+            return json.loads(_strip_jsonc(raw))
+        except json.JSONDecodeError as e2:
+            snippet = raw[:200].replace("\n", "\\n")
+            raise ValueError(f"Not valid JSON at {path}: {e2}. First 200 chars: {snippet}") from e2
+
+# ---------- Catppuccin helpers ----------
 
 def fetch_catppuccin_palette(src: str) -> Dict[str, Any]:
     try:
@@ -55,17 +77,16 @@ def latte_or_mocha_set(palette: Dict[str, Any], variant: str) -> Dict[str,str]:
             out[name] = spec["hex"].lower()
     return out
 
+# ---------- small utilities ----------
+
 def detect_cursor_text(bg_hex: str) -> str:
-    # Pick black/white for cursor text based on background luminance
     h = bg_hex.lstrip("#")
     if len(h) != 6: return "#000000"
     r,g,b = int(h[0:2],16), int(h[2:4],16), int(h[4:6],16)
-    # sRGB → relative luminance-ish
     lum = (0.2126*(r/255.0)) + (0.7152*(g/255.0)) + (0.0722*(b/255.0))
     return "#000000" if lum > 0.6 else "#ffffff"
 
 def yaml_quote(hex_or_token: str) -> str:
-    # always quote to be safe in YAML
     return f"\"{hex_or_token}\""
 
 def main():
@@ -74,7 +95,7 @@ def main():
     ap.add_argument("--id", required=True, help="palette id (e.g., lilac-pearlbloom)")
     ap.add_argument("--label", required=True, help="human label (e.g., Pearlbloom)")
     ap.add_argument("--variant", choices=["latte","frappe","macchiato","mocha"], required=True)
-    ap.add_argument("--comment", default="", help="optional comment color hex (else leave empty)")
+    ap.add_argument("--comment", default="", help="optional comment color hex/token (default: @ansi[8])")
     ap.add_argument("--catpp", default=CATPP_JSON_URL, help="Catppuccin palette.json path/URL")
     ap.add_argument("--out", required=True, help="output YAML path")
     args = ap.parse_args()
@@ -93,13 +114,19 @@ def main():
     cat = fetch_catppuccin_palette(args.catpp)
     base = latte_or_mocha_set(cat, args.variant)
 
-    # --- Build YAML text ---
+    # ------ Build YAML text ------
+    var = lambda s: yaml_quote(s)
+    blend = lambda a,b,t: yaml_quote(f"blend({a}, {b}, {t})")
+
     lines = []
     lines.append(f"id: {args.id}")
     lines.append(f"label: {args.label}")
     lines.append(f"variant: {args.variant}  # Catppuccin base")
-    if args.comment:
-        lines.append(f"comment: {yaml_quote(args.comment)}")
+
+    # comment: default to @ansi[8] unless explicitly provided
+    comment_token = args.comment.strip() if args.comment.strip() else "@ansi[8]"
+    lines.append(f"comment: {yaml_quote(comment_token)}")
+
     lines.append("")
     lines.append("terminal:")
     lines.append("  colors:")
@@ -111,41 +138,40 @@ def main():
     lines.append(f"  cursor_text: {yaml_quote(cursor_text)}")
     if sel_bg: lines.append(f"  selection_background: {yaml_quote(sel_bg)}")
     if sel_fg: lines.append(f"  selection_foreground: {yaml_quote(sel_fg)}")
+
     lines.append("")
     lines.append("catppuccin_overrides:")
 
-    # --- Hue expansion using variables & blends ---
-    # ANSI mapping by convention: 1=red,2=green,3=yellow,4=blue,5=magenta,6=cyan,
-    # bright variants: 9,10,11,12,13,14.
-    var = lambda s: yaml_quote(s)
-    blend = lambda a,b,t: yaml_quote(f"blend({a}, {b}, {t})")
-
-    # Pinks/Magentas
-    lines.append(f"  pink:       {var('@ansi[5]')}    # from ANSI 5 (magenta)")
+    # Hue expansion via variables & blends
+    lines.append(f"  pink:       {var('@ansi[5]')}    # ANSI 5 (magenta)")
     lines.append(f"  mauve:      {var('@ansi[13]')}   # bright magenta")
-    lines.append(f"  lavender:   {blend('@ansi[5]','@ansi[4]','0.50')}  # mid magenta↔blue")
+    lines.append(f"  lavender:   {blend('@ansi[5]','@ansi[4]','0.50')}  # magenta↔blue")
 
-    # Reds/Oranges/Yellows
     lines.append(f"  red:        {var('@ansi[1]')}    # ANSI 1 (red)")
     lines.append(f"  maroon:     {var('@ansi[9]')}    # bright red")
-    lines.append(f"  yellow:     {var('@ansi[3]')}    # ANSI 3 (yellow/brown)")
-    lines.append(f"  peach:      {blend('@ansi[1]','@ansi[3]','0.50')}  # red↔yellow mix")
+    lines.append(f"  yellow:     {var('@ansi[3]')}    # ANSI 3 (yellow)")
+    lines.append(f"  peach:      {blend('@ansi[1]','@ansi[3]','0.50')}  # red↔yellow")
 
-    # Greens/Teals/Cyans/Blues
     lines.append(f"  green:      {var('@ansi[2]')}    # ANSI 2 (green/teal)")
     lines.append(f"  teal:       {var('@ansi[6]')}    # ANSI 6 (cyan)")
     lines.append(f"  sky:        {var('@ansi[12]')}   # bright blue")
-    lines.append(f"  sapphire:   {blend('@ansi[6]','@ansi[4]','0.50')}  # cyan↔blue mix")
+    lines.append(f"  sapphire:   {blend('@ansi[6]','@ansi[4]','0.50')}  # cyan↔blue")
     lines.append(f"  blue:       {var('@ansi[4]')}    # ANSI 4 (blue)")
 
-    # Keep neutrals from Catppuccin variant (best legibility), if available
+    # Neutrals from Catppuccin, with your defaults:
+    # overlay0 := @ansi[8], surface0 := @ansi[0]
     if base:
         for k in CAT_NEUTRAL_ORDER:
-            if k in base:
+            if k == "overlay0":
+                lines.append(f"  overlay0:   {var('@ansi[8]')}  # default from ANSI 8")
+            elif k == "surface0":
+                lines.append(f"  surface0:   {var('@ansi[0]')}  # default from ANSI 0")
+            elif k in base:
                 lines.append(f"  {k}:       {yaml_quote(base[k])}")
     else:
-        # Fallback: omit neutrals so you can fill later
-        pass
+        # No Catppuccin palette available; at least wire your two defaults
+        lines.append(f"  overlay0:   {var('@ansi[8]')}")
+        lines.append(f"  surface0:   {var('@ansi[0]')}")
 
     lines.append("")
     lines.append("tmux:")
@@ -156,6 +182,7 @@ def main():
     lines.append("  message_bg: \"@ansi[8]\"")
     lines.append("  pane_border: \"@ansi[8]\"")
     lines.append("  pane_active_border: \"@ansi[12]\"")
+
     lines.append("")
     lines.append("highlights: {}")
     lines.append("")

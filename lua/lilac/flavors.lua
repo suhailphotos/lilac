@@ -82,10 +82,10 @@ return {
       ["pink"] = "#e880df",
       ["mauve"] = "#ffa6f8",
       ["lavender"] = "#b39de5",
-      ["red"] = "#d669a9",
+      ["red"] = "#da709e",
       ["maroon"] = "#ef86bd",
       ["yellow"] = "#edb087",
-      ["peach"] = "#e28c98",
+      ["peach"] = "#e39092",
       ["green"] = "#82d2e1",
       ["teal"] = "#a677dc",
       ["sky"] = "#a8d8ff",
@@ -96,10 +96,10 @@ return {
       ["subtext0"] = "#a6adc8",
       ["overlay2"] = "#9399b2",
       ["overlay1"] = "#7f849c",
-      ["overlay0"] = "#6c7086",
+      ["overlay0"] = "#6d6c85",
       ["surface2"] = "#585b70",
       ["surface1"] = "#45475a",
-      ["surface0"] = "#313244",
+      ["surface0"] = "#232329",
       ["base"] = "#1e1e2e",
       ["mantle"] = "#181825",
       ["crust"] = "#11111b"
@@ -107,14 +107,14 @@ return {
     ["terminal"] = {
       ["colors"] = {
         "#232329",
-        "#d669a9",
+        "#da709e",
         "#82d2e1",
         "#edb087",
         "#7fbaeb",
         "#e880df",
         "#a677dc",
         "#929ec3",
-        "#808196",
+        "#6d6c85",
         "#ef86bd",
         "#97d0de",
         "#eac5ac",
@@ -125,19 +125,19 @@ return {
       },
       ["background"] = "#14141a",
       ["foreground"] = "#a6adc8",
-      ["cursor"] = "#f5e0dc",
-      ["cursor_text"] = "#15151f"
+      ["cursor"] = "#a6adc8",
+      ["cursor_text"] = "#ffffff"
     },
     ["highlights"] = {
 
     },
-    ["comment"] = nil,
+    ["comment"] = "@ansi[8]",
     ["tmux"] = {
       ["status_fg"] = "#929ec3",
-      ["status_bg"] = "#808196",
+      ["status_bg"] = "#6d6c85",
       ["message_fg"] = "#a6adc8",
-      ["message_bg"] = "#808196",
-      ["pane_border"] = "#808196",
+      ["message_bg"] = "#6d6c85",
+      ["pane_border"] = "#6d6c85",
       ["pane_active_border"] = "#a8d8ff"
     }
   },

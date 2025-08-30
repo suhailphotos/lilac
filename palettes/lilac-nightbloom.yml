@@ -1,18 +1,19 @@
 id: lilac-nightbloom
 label: Nightbloom
 variant: mocha  # Catppuccin base
+comment: "@ansi[8]"
 
 terminal:
   colors:
-    - "#1f1f24"  # 0
-    - "#d669a9"  # 1
+    - "#232329"  # 0
+    - "#da709e"  # 1
     - "#82d2e1"  # 2
     - "#edb087"  # 3
     - "#7fbaeb"  # 4
     - "#e880df"  # 5
     - "#a677dc"  # 6
     - "#929ec3"  # 7
-    - "#808196"  # 8
+    - "#6d6c85"  # 8
     - "#ef86bd"  # 9
     - "#97d0de"  # 10
     - "#eac5ac"  # 11
@@ -21,32 +22,32 @@ terminal:
     - "#baa4f4"  # 14
     - "#e4e8f8"  # 15
   background: "#14141a"
-  foreground: "#cdd6f4"
-  cursor:     "#cdd6f4"
+  foreground: "#a6adc8"
+  cursor:     "#a6adc8"
   cursor_text: "#ffffff"
 
 catppuccin_overrides:
-  pink:       "@ansi[5]"    # from ANSI 5 (magenta)
+  pink:       "@ansi[5]"    # ANSI 5 (magenta)
   mauve:      "@ansi[13]"   # bright magenta
-  lavender:   "blend(@ansi[5], @ansi[4], 0.50)"  # mid magenta↔blue
+  lavender:   "blend(@ansi[5], @ansi[4], 0.50)"  # magenta↔blue
   red:        "@ansi[1]"    # ANSI 1 (red)
   maroon:     "@ansi[9]"    # bright red
-  yellow:     "@ansi[3]"    # ANSI 3 (yellow/brown)
-  peach:      "blend(@ansi[1], @ansi[3], 0.50)"  # red↔yellow mix
+  yellow:     "@ansi[3]"    # ANSI 3 (yellow)
+  peach:      "blend(@ansi[1], @ansi[3], 0.50)"  # red↔yellow
   green:      "@ansi[2]"    # ANSI 2 (green/teal)
   teal:       "@ansi[6]"    # ANSI 6 (cyan)
   sky:        "@ansi[12]"   # bright blue
-  sapphire:   "blend(@ansi[6], @ansi[4], 0.50)"  # cyan↔blue mix
+  sapphire:   "blend(@ansi[6], @ansi[4], 0.50)"  # cyan↔blue
   blue:       "@ansi[4]"    # ANSI 4 (blue)
   text:       "#cdd6f4"
   subtext1:       "#bac2de"
   subtext0:       "#a6adc8"
   overlay2:       "#9399b2"
   overlay1:       "#7f849c"
-  overlay0:       "#6c7086"
+  overlay0:   "@ansi[8]"  # default from ANSI 8
   surface2:       "#585b70"
   surface1:       "#45475a"
-  surface0:       "@ansi[0]"
+  surface0:   "@ansi[0]"  # default from ANSI 0
   base:       "#1e1e2e"
   mantle:       "#181825"
   crust:       "#11111b"
