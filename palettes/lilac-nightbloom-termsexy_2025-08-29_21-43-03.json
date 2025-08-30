@@ -2,24 +2,24 @@
   "name": "",
   "author": "",
   "color": [
-    "#232329",
-    "#d66287",
+    "#1f1f24",
+    "#d669a9",
     "#82d2e1",
     "#edb087",
     "#7fbaeb",
     "#e880df",
-    "#a574dd",
+    "#a677dc",
     "#929ec3",
     "#808196",
     "#ef86bd",
-    "#a4d5e1",
-    "#e6bfa5",
+    "#97d0de",
+    "#eac5ac",
     "#a8d8ff",
     "#ffa6f8",
-    "#af94f4",
+    "#baa4f4",
     "#e4e8f8"
   ],
-  "foreground": "#dbe0f5",
+  "foreground": "#cdd6f4",
   "background": "#14141a"
 }
 

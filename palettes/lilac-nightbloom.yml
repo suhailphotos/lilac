@@ -4,7 +4,7 @@ variant: mocha  # Catppuccin base
 
 terminal:
   colors:
-    - "#232329"  # 0
+    - "#1f1f24"  # 0
     - "#d669a9"  # 1
     - "#82d2e1"  # 2
     - "#edb087"  # 3
@@ -21,9 +21,9 @@ terminal:
     - "#baa4f4"  # 14
     - "#e4e8f8"  # 15
   background: "#14141a"
-  foreground: "#a6adc8"
-  cursor:     "#f5e0dc"
-  cursor_text: "#15151f"
+  foreground: "#cdd6f4"
+  cursor:     "#cdd6f4"
+  cursor_text: "#ffffff"
 
 catppuccin_overrides:
   pink:       "@ansi[5]"    # from ANSI 5 (magenta)
@@ -46,7 +46,7 @@ catppuccin_overrides:
   overlay0:       "#6c7086"
   surface2:       "#585b70"
   surface1:       "#45475a"
-  surface0:       "#313244"
+  surface0:       "@ansi[0]"
   base:       "#1e1e2e"
   mantle:       "#181825"
   crust:       "#11111b"
