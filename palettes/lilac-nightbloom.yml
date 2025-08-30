@@ -1,68 +1,63 @@
 id: lilac-nightbloom
 label: Nightbloom
 variant: mocha  # Catppuccin base
-comment: "#787a8c"
 
 terminal:
   colors:
-    - "#252630"  # 0
-    - "#d6697d"  # 1
-    - "#81c5d6"  # 2
-    - "#e6cba5"  # 3
-    - "#8da9e3"  # 4
-    - "#f4a5dc"  # 5
-    - "#97cde8"  # 6
-    - "#7c87a8"  # 7
-    - "#4c4e69"  # 8
-    - "#da8796"  # 9
-    - "#9ad9e6"  # 10
-    - "#e9ab92"  # 11
-    - "#87abf5"  # 12
-    - "#e880c7"  # 13
-    - "#73bade"  # 14
-    - "#c5cff5"  # 15
-  background: "#13131a"
-  foreground: "#cfd6f5"
+    - "#232329"  # 0
+    - "#d669a9"  # 1
+    - "#82d2e1"  # 2
+    - "#edb087"  # 3
+    - "#7fbaeb"  # 4
+    - "#e880df"  # 5
+    - "#a677dc"  # 6
+    - "#929ec3"  # 7
+    - "#808196"  # 8
+    - "#ef86bd"  # 9
+    - "#97d0de"  # 10
+    - "#eac5ac"  # 11
+    - "#a8d8ff"  # 12
+    - "#ffa6f8"  # 13
+    - "#baa4f4"  # 14
+    - "#e4e8f8"  # 15
+  background: "#14141a"
+  foreground: "#a6adc8"
   cursor:     "#f5e0dc"
   cursor_text: "#15151f"
-  selection_background: "#4c4e69"
-  selection_foreground: "#cfd6f5"
 
 catppuccin_overrides:
-  rosewater: "#f2d5cf"
-  flamingo:  "#eebebe"
-  pink:      "#f4a5dc"
-  mauve:     "#e176bf"
-  red:       "#f38ba8"
-  maroon:    "#da8796"
-  peach:     "#e9ab92"
-  yellow:    "#e6cba5"
-  green:     "#a1d9e6"
-  teal:      "#97cde8"
-  sky:       "#87abf5"
-  sapphire:  "#73bade"
-  blue:      "#85a5e8"
-  lavender:  "#8a9bf2"
-  text:      "#cfd6f5"
-  subtext1:  "#b5bfe2"
-  subtext0:  "#a5adce"
-  overlay2:  "#949cbb"
-  overlay1:  "#838ba7"
-  overlay0:  "#737994"
-  surface2:  "#626880"
-  surface1:  "#51576d"
-  surface0:  "#414559"
-  base:      "#303446"
-  mantle:    "#2a2b3f"
-  crust:     "#1a1a27"
+  pink:       "@ansi[5]"    # from ANSI 5 (magenta)
+  mauve:      "@ansi[13]"   # bright magenta
+  lavender:   "blend(@ansi[5], @ansi[4], 0.50)"  # mid magenta↔blue
+  red:        "@ansi[1]"    # ANSI 1 (red)
+  maroon:     "@ansi[9]"    # bright red
+  yellow:     "@ansi[3]"    # ANSI 3 (yellow/brown)
+  peach:      "blend(@ansi[1], @ansi[3], 0.50)"  # red↔yellow mix
+  green:      "@ansi[2]"    # ANSI 2 (green/teal)
+  teal:       "@ansi[6]"    # ANSI 6 (cyan)
+  sky:        "@ansi[12]"   # bright blue
+  sapphire:   "blend(@ansi[6], @ansi[4], 0.50)"  # cyan↔blue mix
+  blue:       "@ansi[4]"    # ANSI 4 (blue)
+  text:       "#cdd6f4"
+  subtext1:       "#bac2de"
+  subtext0:       "#a6adc8"
+  overlay2:       "#9399b2"
+  overlay1:       "#7f849c"
+  overlay0:       "#6c7086"
+  surface2:       "#585b70"
+  surface1:       "#45475a"
+  surface0:       "#313244"
+  base:       "#1e1e2e"
+  mantle:       "#181825"
+  crust:       "#11111b"
 
 tmux:
-  status_fg: "#7c87a8"
-  status_bg: "#1a1b25"
-  message_fg: "#cfd6f5"
-  message_bg: "#4c4e69"
-  pane_border: "#4c4e69"
-  pane_active_border: "#87abf5"
+  # Feel free to tune these later
+  status_fg: "@ansi[7]"
+  status_bg: "@ansi[8]"
+  message_fg: "@fg"
+  message_bg: "@ansi[8]"
+  pane_border: "@ansi[8]"
+  pane_active_border: "@ansi[12]"
 
-highlights:
-  "@variable.builtin.python": { fg: "#97cde8", italic: true }
+highlights: {}

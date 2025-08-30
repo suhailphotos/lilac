@@ -66,71 +66,80 @@ return {
     ["highlights"] = {
 
     },
-    ["comment"] = nil
+    ["comment"] = nil,
+    ["tmux"] = {
+      ["status_fg"] = "#848faa",
+      ["status_bg"] = "#1f2230",
+      ["message_fg"] = "#d1d8f6",
+      ["message_bg"] = "#535a73",
+      ["pane_border"] = "#535a73",
+      ["pane_active_border"] = "#7eabf3"
+    }
   },
   ["lilac-nightbloom"] = {
     ["variant"] = "mocha",
     ["cat_overrides"] = {
-      ["rosewater"] = "#f2d5cf",
-      ["flamingo"] = "#eebebe",
-      ["pink"] = "#f4a5dc",
-      ["mauve"] = "#e176bf",
-      ["red"] = "#f38ba8",
-      ["maroon"] = "#da8796",
-      ["peach"] = "#e9ab92",
-      ["yellow"] = "#e6cba5",
-      ["green"] = "#a1d9e6",
-      ["teal"] = "#97cde8",
-      ["sky"] = "#87abf5",
-      ["sapphire"] = "#73bade",
-      ["blue"] = "#85a5e8",
-      ["lavender"] = "#8a9bf2",
-      ["text"] = "#cfd6f5",
-      ["subtext1"] = "#b5bfe2",
-      ["subtext0"] = "#a5adce",
-      ["overlay2"] = "#949cbb",
-      ["overlay1"] = "#838ba7",
-      ["overlay0"] = "#737994",
-      ["surface2"] = "#626880",
-      ["surface1"] = "#51576d",
-      ["surface0"] = "#414559",
-      ["base"] = "#303446",
-      ["mantle"] = "#2a2b3f",
-      ["crust"] = "#1a1a27"
+      ["pink"] = "#e880df",
+      ["mauve"] = "#ffa6f8",
+      ["lavender"] = "#b39de5",
+      ["red"] = "#d669a9",
+      ["maroon"] = "#ef86bd",
+      ["yellow"] = "#edb087",
+      ["peach"] = "#e28c98",
+      ["green"] = "#82d2e1",
+      ["teal"] = "#a677dc",
+      ["sky"] = "#a8d8ff",
+      ["sapphire"] = "#9298e3",
+      ["blue"] = "#7fbaeb",
+      ["text"] = "#cdd6f4",
+      ["subtext1"] = "#bac2de",
+      ["subtext0"] = "#a6adc8",
+      ["overlay2"] = "#9399b2",
+      ["overlay1"] = "#7f849c",
+      ["overlay0"] = "#6c7086",
+      ["surface2"] = "#585b70",
+      ["surface1"] = "#45475a",
+      ["surface0"] = "#313244",
+      ["base"] = "#1e1e2e",
+      ["mantle"] = "#181825",
+      ["crust"] = "#11111b"
     },
     ["terminal"] = {
       ["colors"] = {
-        "#2a2b3f",
-        "#da8796",
-        "#a1d9e6",
-        "#e6cba5",
-        "#8da9e3",
-        "#f4a5dc",
-        "#97cde8",
-        "#7c87a8",
-        "#4c4e69",
-        "#da8796",
-        "#9ad9e6",
-        "#e9ab92",
-        "#87abf5",
-        "#e880c7",
-        "#73bade",
-        "#c5cff5"
+        "#232329",
+        "#d669a9",
+        "#82d2e1",
+        "#edb087",
+        "#7fbaeb",
+        "#e880df",
+        "#a677dc",
+        "#929ec3",
+        "#808196",
+        "#ef86bd",
+        "#97d0de",
+        "#eac5ac",
+        "#a8d8ff",
+        "#ffa6f8",
+        "#baa4f4",
+        "#e4e8f8"
       },
-      ["background"] = "#13131a",
-      ["foreground"] = "#cfd6f5",
+      ["background"] = "#14141a",
+      ["foreground"] = "#a6adc8",
       ["cursor"] = "#f5e0dc",
-      ["cursor_text"] = "#15151f",
-      ["selection_background"] = "#4c4e69",
-      ["selection_foreground"] = "#cfd6f5"
+      ["cursor_text"] = "#15151f"
     },
     ["highlights"] = {
-      ["@variable.builtin.python"] = {
-        ["fg"] = "#97cde8",
-        ["italic"] = true
-      }
+
     },
-    ["comment"] = "#787a8c"
+    ["comment"] = nil,
+    ["tmux"] = {
+      ["status_fg"] = "#929ec3",
+      ["status_bg"] = "#808196",
+      ["message_fg"] = "#a6adc8",
+      ["message_bg"] = "#808196",
+      ["pane_border"] = "#808196",
+      ["pane_active_border"] = "#a8d8ff"
+    }
   },
   ["lilac-pearlbloom"] = {
     ["variant"] = "latte",
@@ -194,7 +203,15 @@ return {
         ["italic"] = true
       }
     },
-    ["comment"] = "#797b80"
+    ["comment"] = "#797b80",
+    ["tmux"] = {
+      ["status_fg"] = "#7c87a8",
+      ["status_bg"] = "#1a1b25",
+      ["message_fg"] = "#cfd6f5",
+      ["message_bg"] = "#4c4e69",
+      ["pane_border"] = "#4c4e69",
+      ["pane_active_border"] = "#87abf5"
+    }
   }
 }
 }
