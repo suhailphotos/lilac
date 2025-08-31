@@ -2,22 +2,22 @@
 // Lilac lilac-pearlbloom (Pearlbloom) — variant: latte
 // Source: palettes/lilac-pearlbloom.yml
 
-var black        = '#dfe2e5';
-var red          = '#9f1f0f';
-var green        = '#355d61';
+var black        = '#d4d5da';
+var red          = '#840c33';
+var green        = '#0e545b';
 var yellow       = '#8e3f0a';
-var blue         = '#00559b';
-var magenta      = '#9c2191';
-var cyan         = '#703daa';
+var blue         = '#104e82';
+var magenta      = '#891d80';
+var cyan         = '#5b219d';
 var white        = '#303132';
 
-var lightBlack   = '#7d7f80';
-var lightRed     = '#881203';
+var lightBlack   = '#6d7075';
+var lightRed     = '#780f2f';
 var lightGreen   = '#174145';
 var lightYellow  = '#713d1b';
-var lightBlue    = '#003f73';
-var lightMagenta = '#9c2191';
-var lightCyan    = '#441ea1';
+var lightBlue    = '#07406f';
+var lightMagenta = '#8a1280';
+var lightCyan    = '#4d158f';
 var lightWhite   = '#050505';
 
 t.prefs_.set('color-palette-overrides', [
@@ -29,5 +29,5 @@ t.prefs_.set('color-palette-overrides', [
 
 t.prefs_.set('foreground-color', '#0c0c0c');
 t.prefs_.set('background-color', '#f1f1f3');
-t.prefs_.set('cursor-color', 'rgba(66, 7, 61, 0.70)');
+t.prefs_.set('cursor-color', 'rgba(12, 12, 12, 0.70)');
 t.prefs_.set('cursor-blink', false);

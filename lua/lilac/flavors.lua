@@ -146,44 +146,44 @@ return {
     ["cat_overrides"] = {
       ["pink"] = "#891d80",
       ["mauve"] = "#8a1280",
-      ["lavender"] = "#473280",
+      ["lavender"] = "#4c3681",
       ["red"] = "#840c33",
       ["maroon"] = "#780f2f",
       ["yellow"] = "#8e3f0a",
       ["peach"] = "#89261e",
       ["green"] = "#0e545b",
       ["teal"] = "#5b219d",
-      ["sky"] = "#05487f",
-      ["sapphire"] = "#30348e",
-      ["blue"] = "#073d6a",
+      ["sky"] = "#104e82",
+      ["sapphire"] = "#363890",
+      ["blue"] = "#07406f",
       ["text"] = "#4c4f69",
       ["subtext1"] = "#5c5f77",
       ["subtext0"] = "#6c6f85",
       ["overlay2"] = "#7c7f93",
       ["overlay1"] = "#8c8fa1",
-      ["overlay0"] = "#818485",
+      ["overlay0"] = "#6d7075",
       ["surface2"] = "#acb0be",
       ["surface1"] = "#bcc0cc",
-      ["surface0"] = "#e3e7ea",
+      ["surface0"] = "#d4d5da",
       ["base"] = "#eff1f5",
       ["mantle"] = "#e6e9ef",
       ["crust"] = "#dce0e8"
     },
     ["terminal"] = {
       ["colors"] = {
-        "#e3e7ea",
+        "#d4d5da",
         "#840c33",
         "#0e545b",
         "#8e3f0a",
-        "#05487f",
+        "#104e82",
         "#891d80",
         "#5b219d",
         "#303132",
-        "#818485",
+        "#6d7075",
         "#780f2f",
         "#174145",
         "#713d1b",
-        "#073d6a",
+        "#07406f",
         "#8a1280",
         "#4d158f",
         "#050505"
@@ -196,14 +196,14 @@ return {
     ["highlights"] = {
 
     },
-    ["comment"] = "#818485",
+    ["comment"] = "#6d7075",
     ["tmux"] = {
       ["status_fg"] = "#303132",
-      ["status_bg"] = "#818485",
+      ["status_bg"] = "#6d7075",
       ["message_fg"] = "#0c0c0c",
-      ["message_bg"] = "#818485",
-      ["pane_border"] = "#818485",
-      ["pane_active_border"] = "#073d6a"
+      ["message_bg"] = "#6d7075",
+      ["pane_border"] = "#6d7075",
+      ["pane_active_border"] = "#07406f"
     }
   }
 }
