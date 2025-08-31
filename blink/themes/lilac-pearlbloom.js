@@ -6,7 +6,7 @@ var black        = '#d4dae0';
 var red          = '#a3200f';
 var green        = '#355d61';
 var yellow       = '#8e3f0a';
-var blue         = '#0058a1';
+var blue         = '#0068be';
 var magenta      = '#9c2191';
 var cyan         = '#703daa';
 var white        = '#303132';
@@ -29,5 +29,5 @@ t.prefs_.set('color-palette-overrides', [
 
 t.prefs_.set('foreground-color', '#0c0c0c');
 t.prefs_.set('background-color', '#f1f1f3');
-t.prefs_.set('cursor-color', 'rgba(54, 47, 46, 0.70)');
+t.prefs_.set('cursor-color', 'rgba(12, 12, 12, 0.70)');
 t.prefs_.set('cursor-blink', false);

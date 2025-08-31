@@ -18,10 +18,10 @@ if -b '[ "#{@@lilac_flavor}" = "nightbloom" ]' {
   set -g status-right "#[fg=#95d0ff]#S #[fg=#848da8]| %H:%M"
 }
 if -b '[ "#{@@lilac_flavor}" = "pearlbloom" ]' {
-  set -g status-style "fg=#7c87a8,bg=#1a1b25"
-  set -g message-style "fg=#cfd6f5,bg=#4c4e69"
-  set -g pane-border-style "fg=#4c4e69"
-  set -g pane-active-border-style "fg=#87abf5"
+  set -g status-style "fg=#303132,bg=#828588"
+  set -g message-style "fg=#0c0c0c,bg=#828588"
+  set -g pane-border-style "fg=#828588"
+  set -g pane-active-border-style "fg=#003f73"
   set -g status-left ""
-  set -g status-right "#[fg=#87abf5]#S #[fg=#7c87a8]| %H:%M"
+  set -g status-right "#[fg=#003f73]#S #[fg=#303132]| %H:%M"
 }

@@ -145,31 +145,29 @@ return {
     ["variant"] = "latte",
     ["cat_overrides"] = {
       ["pink"] = "#9c2191",
-      ["mauve"] = "#86147c",
+      ["mauve"] = "#9c2191",
+      ["lavender"] = "#4e44a8",
       ["red"] = "#a3200f",
+      ["maroon"] = "#881203",
       ["yellow"] = "#8e3f0a",
+      ["peach"] = "#98300c",
       ["green"] = "#355d61",
+      ["teal"] = "#703daa",
       ["sky"] = "#003f73",
-      ["blue"] = "#0058a1",
-      ["lavender"] = "#703daa",
-      ["rosewater"] = "#b93919",
-      ["flamingo"] = "#b73427",
-      ["maroon"] = "#9a4121",
-      ["peach"] = "#9a4412",
-      ["teal"] = "#0f5f63",
-      ["sapphire"] = "#0c6a7a",
-      ["text"] = "#36373f",
-      ["subtext1"] = "#494a59",
-      ["subtext0"] = "#73737a",
-      ["overlay2"] = "#666770",
+      ["sapphire"] = "#3852b4",
+      ["blue"] = "#0068be",
+      ["text"] = "#4c4f69",
+      ["subtext1"] = "#5c5f77",
+      ["subtext0"] = "#6c6f85",
+      ["overlay2"] = "#7c7f93",
       ["overlay1"] = "#8c8fa1",
-      ["overlay0"] = "#676a75",
-      ["surface2"] = "#b5b7be",
-      ["surface1"] = "#c6c7cc",
-      ["surface0"] = "#d4d6da",
-      ["base"] = "#e9eaed",
-      ["mantle"] = "#eaebef",
-      ["crust"] = "#dee0e4"
+      ["overlay0"] = "#828588",
+      ["surface2"] = "#acb0be",
+      ["surface1"] = "#bcc0cc",
+      ["surface0"] = "#d4dae0",
+      ["base"] = "#eff1f5",
+      ["mantle"] = "#e6e9ef",
+      ["crust"] = "#dce0e8"
     },
     ["terminal"] = {
       ["colors"] = {
@@ -177,7 +175,7 @@ return {
         "#a3200f",
         "#355d61",
         "#8e3f0a",
-        "#0058a1",
+        "#0068be",
         "#9c2191",
         "#703daa",
         "#303132",
@@ -192,25 +190,20 @@ return {
       },
       ["background"] = "#f1f1f3",
       ["foreground"] = "#0c0c0c",
-      ["cursor"] = "#362f2e",
-      ["cursor_text"] = "#dce0e8",
-      ["selection_background"] = "#bcc0cc",
-      ["selection_foreground"] = "#4c4f69"
+      ["cursor"] = "#0c0c0c",
+      ["cursor_text"] = "#000000"
     },
     ["highlights"] = {
-      ["@variable.builtin.python"] = {
-        ["fg"] = "#67a1be",
-        ["italic"] = true
-      }
+
     },
-    ["comment"] = "#797b80",
+    ["comment"] = "#828588",
     ["tmux"] = {
-      ["status_fg"] = "#7c87a8",
-      ["status_bg"] = "#1a1b25",
-      ["message_fg"] = "#cfd6f5",
-      ["message_bg"] = "#4c4e69",
-      ["pane_border"] = "#4c4e69",
-      ["pane_active_border"] = "#87abf5"
+      ["status_fg"] = "#303132",
+      ["status_bg"] = "#828588",
+      ["message_fg"] = "#0c0c0c",
+      ["message_bg"] = "#828588",
+      ["pane_border"] = "#828588",
+      ["pane_active_border"] = "#003f73"
     }
   }
 }
