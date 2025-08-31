@@ -7,13 +7,13 @@ terminal:
   colors:
     - "#1d1d27"  # 0
     - "#da78a3"  # 1
-    - "#81d2e1"  # 2
-    - "#eaa783"  # 3
-    - "#78b3e3"  # 4
-    - "#d77fcf"  # 5
-    - "#ac82dc"  # 6
+    - "#8dd4e1"  # 2
+    - "#eab090"  # 3
+    - "#79b5e5"  # 4
+    - "#d782cf"  # 5
+    - "#af87dc"  # 6
     - "#848da8"  # 7
-    - "#707079"  # 8
+    - "#8787a5"  # 8
     - "#f591c6"  # 9
     - "#97d0de"  # 10
     - "#eac5ac"  # 11
@@ -21,10 +21,10 @@ terminal:
     - "#ffa6f8"  # 13
     - "#b39af4"  # 14
     - "#d9dff6"  # 15
-  background: "#14141a"
+  background: "#13131a"
   foreground: "#d1d9f6"
-  cursor:     "#f5e0dc"
-  cursor_text: "#cdd6f4"
+  cursor:     "#d1d9f6"
+  cursor_text: "#ffffff"
 
 catppuccin_overrides:
   pink:       "@ansi[5]"    # ANSI 5 (magenta)
