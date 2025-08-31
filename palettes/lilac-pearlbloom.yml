@@ -6,24 +6,24 @@ comment: "@ansi[8]"
 terminal:
   colors:
     - "#dfe2e5"  # 0
-    - "#9f1f0f"  # 1
-    - "#355d61"  # 2
+    - "#8a1b0d"  # 1
+    - "#0e545b"  # 2
     - "#8e3f0a"  # 3
-    - "#00559b"  # 4
-    - "#9c2191"  # 5
+    - "#054478"  # 4
+    - "#891d80"  # 5
     - "#703daa"  # 6
     - "#303132"  # 7
-    - "#7d7f80"  # 8
+    - "#67696a"  # 8
     - "#881203"  # 9
     - "#174145"  # 10
     - "#713d1b"  # 11
-    - "#003f73"  # 12
-    - "#9c2191"  # 13
+    - "#003867"  # 12
+    - "#8a1280"  # 13
     - "#441ea1"  # 14
     - "#050505"  # 15
   background: "#f1f1f3"
   foreground: "#0c0c0c"
-  cursor:     "#42073d"
+  cursor:     "#0c0c0c"
   cursor_text: "#000000"
 
 catppuccin_overrides:
@@ -36,9 +36,9 @@ catppuccin_overrides:
   peach:      "blend(@ansi[1], @ansi[3], 0.50)"  # red↔yellow
   green:      "@ansi[2]"    # ANSI 2 (green/teal)
   teal:       "@ansi[6]"    # ANSI 6 (cyan)
-  sky:        "@ansi[12]"   # bright blue
+  sky:        "@ansi[4]"   # bright blue
   sapphire:   "blend(@ansi[6], @ansi[4], 0.50)"  # cyan↔blue
-  blue:       "@ansi[4]"    # ANSI 4 (blue)
+  blue:       "@ansi[12]"    # ANSI 4 (blue)
   text:       "#4c4f69"
   subtext1:       "#5c5f77"
   subtext0:       "#6c6f85"
