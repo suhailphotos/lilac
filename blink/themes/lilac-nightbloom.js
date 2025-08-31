@@ -3,15 +3,15 @@
 // Source: palettes/lilac-nightbloom.yml
 
 var black        = '#1d1d27';
-var red          = '#da78a3';
-var green        = '#81d2e1';
-var yellow       = '#eaa783';
-var blue         = '#78b3e3';
-var magenta      = '#d77fcf';
-var cyan         = '#ac82dc';
+var red          = '#ea81af';
+var green        = '#97d5e1';
+var yellow       = '#f1bea2';
+var blue         = '#8dbde4';
+var magenta      = '#ea8fe1';
+var cyan         = '#b88ee7';
 var white        = '#848da8';
 
-var lightBlack   = '#707079';
+var lightBlack   = '#8787a5';
 var lightRed     = '#f591c6';
 var lightGreen   = '#97d0de';
 var lightYellow  = '#eac5ac';
@@ -28,6 +28,6 @@ t.prefs_.set('color-palette-overrides', [
 ]);
 
 t.prefs_.set('foreground-color', '#d1d9f6');
-t.prefs_.set('background-color', '#14141a');
+t.prefs_.set('background-color', '#13131a');
 t.prefs_.set('cursor-color', 'rgba(245, 224, 220, 0.70)');
 t.prefs_.set('cursor-blink', false);
