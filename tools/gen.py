@@ -48,6 +48,16 @@ def rgb_to_hex(r,g,b):
         max(0,min(255, round(b*255))),
     )
 
+def _hex_to_rgb_tuple(hx: str):
+    hx = hx.lstrip('#')
+    if len(hx) == 3:
+        hx = ''.join(ch*2 for ch in hx)
+    r = int(hx[0:2], 16)
+    g = int(hx[2:4], 16)
+    b = int(hx[4:6], 16)
+    return (r, g, b)
+
+
 def write_text(path: Path, s: str):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(s, encoding="utf-8")
@@ -290,6 +300,46 @@ def gen_iterm(items):
             plistlib.dump(d, f)
         print("wrote", out.relative_to(ROOT))
 
+def generate_blink_theme(yaml_path: Path, out_js: Path, jinja_root: Path, cursor_alpha: float = 0.70, cursor_blink: bool = False):
+    """Read a Lilac palette YAML and render a Blink theme JS file."""
+    data = yaml.safe_load(Path(yaml_path).read_text())
+
+    ansi = data["terminal"]["colors"]
+    if not isinstance(ansi, list) or len(ansi) < 16:
+        raise ValueError(f"{yaml_path} missing terminal.colors[0..15]")
+
+    background = data["terminal"].get("background")
+    foreground = data["terminal"].get("foreground")
+    cursor_hex = data["terminal"].get("cursor", foreground or "#ffffff")
+
+    r, g, b = _hex_to_rgb_tuple(cursor_hex)  # use the global helper you already defined
+    cursor_rgba = f"rgba({r}, {g}, {b}, {cursor_alpha:.2f})"
+
+    env = Environment(
+        loader=FileSystemLoader(str(jinja_root)),
+        autoescape=False,
+        trim_blocks=True,
+        lstrip_blocks=True,
+    )
+    tpl = env.get_template("templates/blink/theme.js.j2")
+
+    payload = {
+        "id": data.get("id", out_js.stem),
+        "label": data.get("label", out_js.stem.title()),
+        "variant": data.get("variant", ""),
+        "src": str(yaml_path),
+        "ansi": ansi,
+        "foreground": foreground,
+        "background": background,
+        "cursor_rgba": cursor_rgba,
+        "cursor_blink": bool(cursor_blink),
+    }
+
+    out_js.parent.mkdir(parents=True, exist_ok=True)
+    out_js.write_text(tpl.render(**payload) + "\n", encoding="utf-8")
+    print(f"[blink] wrote {out_js}")
+
+
 def gen_tmux(items):
     parts = [
         "# lilac/tmux: set @lilac_flavor to one of the generated flavors, then reload tmux",
@@ -327,6 +377,27 @@ def main():
     gen_iterm(items)
     gen_tmux(items)
     print("Done. Palettes:", ", ".join([i["id"] for i in items]))
+
+# Example wiring:
+#if __name__ == \"__main__\":
+#    ROOT = Path(__file__).resolve().parents[1]  # adjust to your layout
+#    JINJA = ROOT  # template base
+#
+#    generate_blink_theme(
+#        yaml_path = ROOT / \"palettes/lilac-pearlbloom.yml\",
+#        out_js    = ROOT / \"blink/themes/lilac-pearlbloom.js\",
+#        jinja_root= JINJA,
+#        cursor_alpha = 0.70,
+#        cursor_blink = False,
+#    )
+#
+#    generate_blink_theme(
+#        yaml_path = ROOT / \"palettes/lilac-nightbloom.yml\",
+#        out_js    = ROOT / \"blink/themes/lilac-nightbloom.js\",
+#        jinja_root= JINJA,
+#        cursor_alpha = 0.70,
+#        cursor_blink = False,
+#    )
 
 if __name__ == "__main__":
     main()
