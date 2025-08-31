@@ -79,18 +79,18 @@ return {
   ["lilac-nightbloom"] = {
     ["variant"] = "mocha",
     ["cat_overrides"] = {
-      ["pink"] = "#d782cf",
+      ["pink"] = "#ea8de1",
       ["mauve"] = "#ffa6f8",
-      ["lavender"] = "#a89cda",
-      ["red"] = "#da78a3",
+      ["lavender"] = "#bca5e2",
+      ["red"] = "#ea81af",
       ["maroon"] = "#f591c6",
       ["yellow"] = "#eab090",
-      ["peach"] = "#e2949a",
-      ["green"] = "#8dd4e1",
-      ["teal"] = "#af87dc",
+      ["peach"] = "#ea98a0",
+      ["green"] = "#97d5e1",
+      ["teal"] = "#b88ee7",
       ["sky"] = "#95d0ff",
-      ["sapphire"] = "#949ee0",
-      ["blue"] = "#79b5e5",
+      ["sapphire"] = "#a2a6e6",
+      ["blue"] = "#8dbde4",
       ["text"] = "#cdd6f4",
       ["subtext1"] = "#bac2de",
       ["subtext0"] = "#a6adc8",
@@ -107,12 +107,12 @@ return {
     ["terminal"] = {
       ["colors"] = {
         "#1d1d27",
-        "#da78a3",
-        "#8dd4e1",
+        "#ea81af",
+        "#97d5e1",
         "#eab090",
-        "#79b5e5",
-        "#d782cf",
-        "#af87dc",
+        "#8dbde4",
+        "#ea8de1",
+        "#b88ee7",
         "#848da8",
         "#8787a5",
         "#f591c6",
@@ -125,8 +125,8 @@ return {
       },
       ["background"] = "#13131a",
       ["foreground"] = "#d1d9f6",
-      ["cursor"] = "#d1d9f6",
-      ["cursor_text"] = "#ffffff"
+      ["cursor"] = "#f5e0dc",
+      ["cursor_text"] = "#cdd6f4"
     },
     ["highlights"] = {
 

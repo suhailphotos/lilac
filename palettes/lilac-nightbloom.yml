@@ -6,12 +6,12 @@ comment: "@ansi[8]"
 terminal:
   colors:
     - "#1d1d27"  # 0
-    - "#da78a3"  # 1
-    - "#8dd4e1"  # 2
+    - "#ea81af"  # 1
+    - "#97d5e1"  # 2
     - "#eab090"  # 3
-    - "#79b5e5"  # 4
-    - "#d782cf"  # 5
-    - "#af87dc"  # 6
+    - "#8dbde4"  # 4
+    - "#ea8de1"  # 5
+    - "#b88ee7"  # 6
     - "#848da8"  # 7
     - "#8787a5"  # 8
     - "#f591c6"  # 9
@@ -23,8 +23,8 @@ terminal:
     - "#d9dff6"  # 15
   background: "#13131a"
   foreground: "#d1d9f6"
-  cursor:     "#d1d9f6"
-  cursor_text: "#ffffff"
+  cursor:     "#f5e0dc"
+  cursor_text: "#cdd6f4"
 
 catppuccin_overrides:
   pink:       "@ansi[5]"    # ANSI 5 (magenta)
