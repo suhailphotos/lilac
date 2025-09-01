@@ -1,56 +1,64 @@
 id: lilac-mistbloom
 label: Mistbloom
-variant: frappe
+variant: frappe  # Catppuccin base
+comment: "@ansi[8]"
 
 terminal:
   colors:
-    - "#2c2f40"  # 0
-    - "#e88295"  # 1
-    - "#8ad1bb"  # 2
-    - "#f4c99a"  # 3
-    - "#7eabf3"  # 4
-    - "#f4b8e4"  # 5
-    - "#a8e7dd"  # 6
-    - "#848faa"  # 7
-    - "#535a73"  # 8
-    - "#f26681"  # 9
-    - "#65c7a8"  # 10
-    - "#f4a88d"  # 11
-    - "#7daaee"  # 12
-    - "#efa7dc"  # 13
-    - "#a2e8e5"  # 14
-    - "#c2cef8"  # 15
-  background: "#24273a"
-  foreground: "#d1d8f6"
-  cursor:     "#f5e0dc"
-  cursor_text: "#1e1e27"
-  selection_background: "#535a73"
-  selection_foreground: "#d1d8f6"
+    - "#3d4453"  # 0
+    - "#ae6785"  # 1
+    - "#87b3bb"  # 2
+    - "#ecb99e"  # 3
+    - "#94b3cc"  # 4
+    - "#b171aa"  # 5
+    - "#ac85d8"  # 6
+    - "#cad1dc"  # 7
+    - "#7b8599"  # 8
+    - "#bf7a9f"  # 9
+    - "#8db4be"  # 10
+    - "#ebb895"  # 11
+    - "#82a5c2"  # 12
+    - "#b586b1"  # 13
+    - "#a38cc9"  # 14
+    - "#eff1f5"  # 15
+  background: "#363b46"
+  foreground: "#cad3e7"
+  cursor:     "#cad3e7"
+  cursor_text: "#ffffff"
 
 catppuccin_overrides:
-  crust:    "#1e1e27"
-  mantle:   "#2c2f40"
-  base:     "#24273a"
-  text:     "#d1d8f6"
-  red:      "#e88295"
-  maroon:   "#f26681"
-  green:    "#8ad1bb"
-  yellow:   "#f4c99a"
-  peach:    "#f4a88d"
-  blue:     "#7eabf3"
-  sky:      "#7daaee"
-  sapphire: "#a2e8e5"
-  pink:     "#f4b8e4"
-  mauve:    "#efa7dc"
-  lavender: "#c2cef8"
-  teal:     "#a8e7dd"
+  pink:       "@ansi[5]"    # ANSI 5 (magenta)
+  mauve:      "@ansi[13]"   # bright magenta
+  lavender:   "blend(@ansi[5], @ansi[4], 0.50)"  # magenta↔blue
+  red:        "@ansi[1]"    # ANSI 1 (red)
+  maroon:     "@ansi[9]"    # bright red
+  yellow:     "@ansi[3]"    # ANSI 3 (yellow)
+  peach:      "blend(@ansi[1], @ansi[3], 0.50)"  # red↔yellow
+  green:      "@ansi[2]"    # ANSI 2 (green/teal)
+  teal:       "@ansi[6]"    # ANSI 6 (cyan)
+  sky:        "@ansi[12]"   # bright blue
+  sapphire:   "blend(@ansi[6], @ansi[4], 0.50)"  # cyan↔blue
+  blue:       "@ansi[4]"    # ANSI 4 (blue)
+  text:       "#c6d0f5"
+  subtext1:       "#b5bfe2"
+  subtext0:       "#a5adce"
+  overlay2:       "#949cbb"
+  overlay1:       "#838ba7"
+  overlay0:   "@ansi[8]"  # default from ANSI 8
+  surface2:       "#626880"
+  surface1:       "#51576d"
+  surface0:   "@ansi[0]"  # default from ANSI 0
+  base:       "#303446"
+  mantle:       "#292c3c"
+  crust:       "#232634"
 
 tmux:
-  status_fg: "#848faa"
-  status_bg: "#1f2230"
-  message_fg: "#d1d8f6"
-  message_bg: "#535a73"
-  pane_border: "#535a73"
-  pane_active_border: "#7eabf3"
+  # Feel free to tune these later
+  status_fg: "@ansi[7]"
+  status_bg: "@ansi[8]"
+  message_fg: "@fg"
+  message_bg: "@ansi[8]"
+  pane_border: "@ansi[8]"
+  pane_active_border: "@ansi[12]"
 
 highlights: {}
