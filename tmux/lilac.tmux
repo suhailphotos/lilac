@@ -2,12 +2,12 @@
 set -gq @lilac_flavor "#{@@lilac_flavor}"
 if -b '[ -z "#{@@lilac_flavor}" ]' { set -g @lilac_flavor "nightbloom" }
 if -b '[ "#{@@lilac_flavor}" = "mistbloom" ]' {
-  set -g status-style "fg=#cad1dc,bg=#7b8599"
-  set -g message-style "fg=#cad3e7,bg=#7b8599"
-  set -g pane-border-style "fg=#7b8599"
-  set -g pane-active-border-style "fg=#82a5c2"
+  set -g status-style "fg=#d2dae4,bg=#98a5bd"
+  set -g message-style "fg=#d6dff4,bg=#98a5bd"
+  set -g pane-border-style "fg=#98a5bd"
+  set -g pane-active-border-style "fg=#88bce6"
   set -g status-left ""
-  set -g status-right "#[fg=#82a5c2]#S #[fg=#cad1dc]| %H:%M"
+  set -g status-right "#[fg=#88bce6]#S #[fg=#d2dae4]| %H:%M"
 }
 if -b '[ "#{@@lilac_flavor}" = "nightbloom" ]' {
   set -g status-style "fg=#848da8,bg=#8787a5"

@@ -3,22 +3,23 @@
   "author": "",
   "color": [
     "#3d4453",
-    "#ae6785",
-    "#87b3bb",
-    "#ecb99e",
-    "#94b3cc",
-    "#b171aa",
-    "#ac85d8",
-    "#cad1dc",
-    "#7b8599",
-    "#bf7a9f",
-    "#8db4be",
-    "#ebb895",
-    "#82a5c2",
-    "#b586b1",
-    "#a38cc9",
-    "#eff1f5"
+    "#c486a0",
+    "#a0c6cd",
+    "#f1c1a7",
+    "#aecce5",
+    "#d899d1",
+    "#bd9ae5",
+    "#d2dae4",
+    "#98a5bd",
+    "#e5aaca",
+    "#add4dd",
+    "#f1cdb5",
+    "#88bce6",
+    "#e2a7dd",
+    "#b69ae5",
+    "#f2f4f8"
   ],
-  "foreground": "#cad3e7",
-  "background": "#363b46"
+  "foreground": "#d6dff4",
+  "background": "#313640"
 }
+
