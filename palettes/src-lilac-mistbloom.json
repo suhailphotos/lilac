@@ -2,7 +2,7 @@
   "name": "",
   "author": "",
   "color": [
-    "#3d4453",
+    "#3b4150",
     "#c486a0",
     "#a0c6cd",
     "#f1c1a7",
@@ -17,9 +17,8 @@
     "#88bce6",
     "#e2a7dd",
     "#b69ae5",
-    "#f2f4f8"
+    "#f3f5f9"
   ],
-  "foreground": "#d6dff4",
-  "background": "#313640"
+  "foreground": "#dae3f8",
+  "background": "#2e333d"
 }
-
