@@ -102,17 +102,17 @@ return {
       ["subtext0"] = "#a6adc8",
       ["overlay2"] = "#9399b2",
       ["overlay1"] = "#7f849c",
-      ["overlay0"] = "#949494",
+      ["overlay0"] = "#8d8f95",
       ["surface2"] = "#585b70",
       ["surface1"] = "#45475a",
-      ["surface0"] = "#202020",
+      ["surface0"] = "#2a2a2d",
       ["base"] = "#1e1e2e",
       ["mantle"] = "#181825",
       ["crust"] = "#11111b"
     },
     ["terminal"] = {
       ["colors"] = {
-        "#202020",
+        "#2a2a2d",
         "#eb79ab",
         "#97d5e1",
         "#f7c09c",
@@ -120,30 +120,30 @@ return {
         "#ea8fe1",
         "#b88ee7",
         "#a9abbc",
-        "#949494",
+        "#8d8f95",
         "#f493c6",
         "#97d0de",
         "#fcc9a7",
         "#a8d9ff",
         "#ffa6f8",
         "#bfa9f7",
-        "#eeeff3"
+        "#e8e9ef"
       },
-      ["background"] = "#191919",
-      ["foreground"] = "#ffffff",
-      ["cursor"] = "#ffffff",
+      ["background"] = "#202020",
+      ["foreground"] = "#ebeaf3",
+      ["cursor"] = "#ebeaf3",
       ["cursor_text"] = "#ffffff"
     },
     ["highlights"] = {
 
     },
-    ["comment"] = "#949494",
+    ["comment"] = "#8d8f95",
     ["tmux"] = {
       ["status_fg"] = "#a9abbc",
-      ["status_bg"] = "#949494",
-      ["message_fg"] = "#ffffff",
-      ["message_bg"] = "#949494",
-      ["pane_border"] = "#949494",
+      ["status_bg"] = "#8d8f95",
+      ["message_fg"] = "#ebeaf3",
+      ["message_bg"] = "#8d8f95",
+      ["pane_border"] = "#8d8f95",
       ["pane_active_border"] = "#a8d9ff"
     }
   },
