@@ -2,23 +2,23 @@
   "name": "",
   "author": "",
   "color": [
-    "#343542",
-    "#ea81af",
+    "#202020",
+    "#eb79ab",
     "#97d5e1",
     "#f7c09c",
     "#8fc5f1",
     "#ea8fe1",
     "#b88ee7",
-    "#b1b8d0",
-    "#a5a5b9",
-    "#f591c6",
+    "#a9abbc",
+    "#949494",
+    "#f493c6",
     "#97d0de",
     "#fcc9a7",
     "#a8d9ff",
     "#ffa6f8",
-    "#b39af4",
-    "#dce1f3"
+    "#bfa9f7",
+    "#eeeff3"
   ],
-  "foreground": "#f0f3fe",
-  "background": "#2a2d3b"
+  "foreground": "#ffffff",
+  "background": "#191919"
 }
