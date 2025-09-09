@@ -5,7 +5,7 @@ comment: "@ansi[8]"
 
 terminal:
   colors:
-    - "#2a2a2d"  # 0
+    - "#20232b"  # 0
     - "#eb79ab"  # 1
     - "#97d5e1"  # 2
     - "#f7c09c"  # 3
@@ -21,7 +21,7 @@ terminal:
     - "#ffa6f8"  # 13
     - "#bfa9f7"  # 14
     - "#e8e9ef"  # 15
-  background: "#202020"
+  background: "#161920"
   foreground: "#ebeaf3"
   cursor:     "#ebeaf3"
   cursor_text: "#ffffff"
