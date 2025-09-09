@@ -5,26 +5,26 @@ comment: "@ansi[8]"
 
 terminal:
   colors:
-    - "#1d1d27"  # 0
+    - "#262835"  # 0
     - "#ea81af"  # 1
     - "#97d5e1"  # 2
-    - "#f1bea2"  # 3
-    - "#8dbde4"  # 4
+    - "#f3b89a"  # 3
+    - "#8fc5f1"  # 4
     - "#ea8fe1"  # 5
     - "#b88ee7"  # 6
-    - "#848da8"  # 7
-    - "#8787a5"  # 8
+    - "#a7afc9"  # 7
+    - "#a5a5b9"  # 8
     - "#f591c6"  # 9
     - "#97d0de"  # 10
-    - "#eac5ac"  # 11
-    - "#95d0ff"  # 12
+    - "#fcd2b6"  # 11
+    - "#a8d9ff"  # 12
     - "#ffa6f8"  # 13
     - "#b39af4"  # 14
-    - "#d9dff6"  # 15
-  background: "#13131a"
-  foreground: "#d1d9f6"
-  cursor:     "#f5e0dc"
-  cursor_text: "#cdd6f4"
+    - "#dce1f3"  # 15
+  background: "#202128"
+  foreground: "#f0f3fe"
+  cursor:     "#f0f3fe"
+  cursor_text: "#ffffff"
 
 catppuccin_overrides:
   pink:       "@ansi[5]"    # ANSI 5 (magenta)
