@@ -5,11 +5,11 @@
 	<key>Ansi 0 Color</key>
 	<dict>
 		<key>Blue Component</key>
-		<real>0.27058823529411763</real>
+		<real>0.24313725490196078</real>
 		<key>Green Component</key>
-		<real>0.2235294117647059</real>
+		<real>0.19215686274509805</real>
 		<key>Red Component</key>
-		<real>0.21568627450980393</real>
+		<real>0.18823529411764706</real>
 	</dict>
 	<key>Ansi 1 Color</key>
 	<dict>
@@ -149,11 +149,11 @@
 	<key>Background Color</key>
 	<dict>
 		<key>Blue Component</key>
-		<real>0.21176470588235294</real>
+		<real>0.2</real>
 		<key>Green Component</key>
-		<real>0.1568627450980392</real>
+		<real>0.15294117647058825</real>
 		<key>Red Component</key>
-		<real>0.1450980392156863</real>
+		<real>0.14901960784313725</real>
 	</dict>
 	<key>Cursor Color</key>
 	<dict>
