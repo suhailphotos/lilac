@@ -105,14 +105,14 @@ return {
       ["overlay0"] = "#a5a5b9",
       ["surface2"] = "#585b70",
       ["surface1"] = "#45475a",
-      ["surface0"] = "#262835",
+      ["surface0"] = "#353747",
       ["base"] = "#1e1e2e",
       ["mantle"] = "#181825",
       ["crust"] = "#11111b"
     },
     ["terminal"] = {
       ["colors"] = {
-        "#262835",
+        "#353747",
         "#ea81af",
         "#97d5e1",
         "#f3b89a",
@@ -123,13 +123,13 @@ return {
         "#a5a5b9",
         "#f591c6",
         "#97d0de",
-        "#fcd2b6",
+        "#fcc9a7",
         "#a8d9ff",
         "#ffa6f8",
         "#b39af4",
         "#dce1f3"
       },
-      ["background"] = "#202128",
+      ["background"] = "#252836",
       ["foreground"] = "#f0f3fe",
       ["cursor"] = "#f0f3fe",
       ["cursor_text"] = "#ffffff"
