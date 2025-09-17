@@ -5,23 +5,23 @@ comment: "@ansi[8]"
 
 terminal:
   colors:
-    - "#25242f"  # 0
-    - "#fcb2c7"  # 1
+    - "#232323"  # 0
+    - "#fba6df"  # 1
     - "#9bcafb"  # 2
-    - "#a19dfa"  # 3
+    - "#fcb2c7"  # 3
     - "#94b3fb"  # 4
     - "#c995f9"  # 5
-    - "#fba6df"  # 6
+    - "#9c98f8"  # 6
     - "#b4b3c0"  # 7
     - "#84838c"  # 8
-    - "#fcb5c9"  # 9
+    - "#fbbbe6"  # 9
     - "#bbdafb"  # 10
-    - "#b1adf7"  # 11
+    - "#faabc3"  # 11
     - "#a5befa"  # 12
     - "#c995f9"  # 13
-    - "#fbbbe6"  # 14
+    - "#9c98f8"  # 14
     - "#e0deee"  # 15
-  background: "#211f2c"
+  background: "#1e1e1e"
   foreground: "#ebeaf3"
   cursor:     "#ebeaf3"
   cursor_text: "#ffffff"
