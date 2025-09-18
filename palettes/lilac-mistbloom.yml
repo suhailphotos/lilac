@@ -8,16 +8,16 @@ terminal:
     - "#353535"  # 0
     - "#f9a1cd"  # 1
     - "#addafa"  # 2
-    - "#f7bfb9"  # 3
-    - "#a4c8fc"  # 4
+    - "#ffb7cd"  # 3
+    - "#9dcbfe"  # 4
     - "#fcbbfd"  # 5
     - "#c0b8fe"  # 6
     - "#c6c4cf"  # 7
-    - "#c6c2ce"  # 8
+    - "#908d95"  # 8
     - "#f9a1cd"  # 9
     - "#addafa"  # 10
-    - "#fbcdc8"  # 11
-    - "#a4c8fc"  # 12
+    - "#ffc6d7"  # 11
+    - "#a5d0ff"  # 12
     - "#fcc7fd"  # 13
     - "#c0b8fe"  # 14
     - "#e8e7eb"  # 15
