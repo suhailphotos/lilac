@@ -8,7 +8,7 @@ terminal:
     - "#353535"  # 0
     - "#f9a1cd"  # 1
     - "#addafa"  # 2
-    - "#faaca4"  # 3
+    - "#f7bfb9"  # 3
     - "#a4c8fc"  # 4
     - "#fcbbfd"  # 5
     - "#c0b8fe"  # 6
@@ -16,7 +16,7 @@ terminal:
     - "#c6c2ce"  # 8
     - "#f9a1cd"  # 9
     - "#addafa"  # 10
-    - "#faaca4"  # 11
+    - "#fbcdc8"  # 11
     - "#a4c8fc"  # 12
     - "#fcc7fd"  # 13
     - "#c0b8fe"  # 14
