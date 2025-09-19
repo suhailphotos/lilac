@@ -3,21 +3,21 @@
 // Source: palettes/lilac-mistbloom.yml
 
 var black        = '#3b4252';
-var red          = '#bf617f';
-var green        = '#8cbeb9';
-var yellow       = '#e4ab93';
+var red          = '#bf6f89';
+var green        = '#89bec8';
+var yellow       = '#f4b7ad';
 var blue         = '#81a1c1';
-var magenta      = '#b48ead';
-var cyan         = '#889bd0';
+var magenta      = '#d399c9';
+var cyan         = '#9baee5';
 var white        = '#babec3';
 
 var lightBlack   = '#4c566a';
-var lightRed     = '#e382a1';
-var lightGreen   = '#9cd9d2';
-var lightYellow  = '#fac5ab';
+var lightRed     = '#f291b0';
+var lightGreen   = '#ade3dd';
+var lightYellow  = '#fac4bc';
 var lightBlue    = '#81a1c1';
-var lightMagenta = '#b48ead';
-var lightCyan    = '#99ace0';
+var lightMagenta = '#e3a2d7';
+var lightCyan    = '#b9c8f2';
 var lightWhite   = '#eceff4';
 
 t.prefs_.set('color-palette-overrides', [
@@ -28,6 +28,6 @@ t.prefs_.set('color-palette-overrides', [
 ]);
 
 t.prefs_.set('foreground-color', '#d8dee9');
-t.prefs_.set('background-color', '#2e3440');
+t.prefs_.set('background-color', '#292f3b');
 t.prefs_.set('cursor-color', 'rgba(216, 222, 233, 0.70)');
 t.prefs_.set('cursor-blink', false);

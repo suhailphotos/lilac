@@ -6,22 +6,22 @@ comment: "@ansi[8]"
 terminal:
   colors:
     - "#3b4252"  # 0
-    - "#bf617f"  # 1
-    - "#8cbeb9"  # 2
-    - "#e4ab93"  # 3
+    - "#bf6f89"  # 1
+    - "#89bec8"  # 2
+    - "#f4b7ad"  # 3
     - "#81a1c1"  # 4
-    - "#b48ead"  # 5
-    - "#889bd0"  # 6
+    - "#d399c9"  # 5
+    - "#9baee5"  # 6
     - "#babec3"  # 7
     - "#4c566a"  # 8
-    - "#e382a1"  # 9
-    - "#9cd9d2"  # 10
-    - "#fac5ab"  # 11
+    - "#f291b0"  # 9
+    - "#ade3dd"  # 10
+    - "#fac4bc"  # 11
     - "#81a1c1"  # 12
-    - "#b48ead"  # 13
-    - "#99ace0"  # 14
+    - "#e3a2d7"  # 13
+    - "#b9c8f2"  # 14
     - "#eceff4"  # 15
-  background: "#2e3440"
+  background: "#292f3b"
   foreground: "#d8dee9"
   cursor:     "#d8dee9"
   cursor_text: "#ffffff"
