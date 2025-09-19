@@ -2,23 +2,23 @@
 // Lilac lilac-mistbloom (Mistbloom) — variant: frappe
 // Source: palettes/lilac-mistbloom.yml
 
-var black        = '#3b4150';
-var red          = '#c486a0';
-var green        = '#a0c6cd';
-var yellow       = '#f1c1a7';
-var blue         = '#aecce5';
-var magenta      = '#d899d1';
-var cyan         = '#bd9ae5';
-var white        = '#d2dae4';
+var black        = '#3b4252';
+var red          = '#bf617f';
+var green        = '#8cbeb9';
+var yellow       = '#e4ab93';
+var blue         = '#81a1c1';
+var magenta      = '#b48ead';
+var cyan         = '#889bd0';
+var white        = '#babec3';
 
-var lightBlack   = '#98a5bd';
-var lightRed     = '#e5aaca';
-var lightGreen   = '#add4dd';
-var lightYellow  = '#f1cdb5';
-var lightBlue    = '#88bce6';
-var lightMagenta = '#e2a7dd';
-var lightCyan    = '#b69ae5';
-var lightWhite   = '#f3f5f9';
+var lightBlack   = '#4c566a';
+var lightRed     = '#e382a1';
+var lightGreen   = '#9cd9d2';
+var lightYellow  = '#fac5ab';
+var lightBlue    = '#81a1c1';
+var lightMagenta = '#b48ead';
+var lightCyan    = '#99ace0';
+var lightWhite   = '#eceff4';
 
 t.prefs_.set('color-palette-overrides', [
   black, red, green, yellow,
@@ -27,7 +27,7 @@ t.prefs_.set('color-palette-overrides', [
   lightBlue, lightMagenta, lightCyan, lightWhite
 ]);
 
-t.prefs_.set('foreground-color', '#dae3f8');
-t.prefs_.set('background-color', '#2e333d');
-t.prefs_.set('cursor-color', 'rgba(218, 227, 248, 0.70)');
+t.prefs_.set('foreground-color', '#d8dee9');
+t.prefs_.set('background-color', '#2e3440');
+t.prefs_.set('cursor-color', 'rgba(216, 222, 233, 0.70)');
 t.prefs_.set('cursor-blink', false);
