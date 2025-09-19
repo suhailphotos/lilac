@@ -9,9 +9,9 @@ var yellow       = '#fcb2c7';
 var blue         = '#94b3fb';
 var magenta      = '#c995f9';
 var cyan         = '#9c98f8';
-var white        = '#9796a1';
+var white        = '#a09eb7';
 
-var lightBlack   = '#57575b';
+var lightBlack   = '#626271';
 var lightRed     = '#fbbbe6';
 var lightGreen   = '#bbdafb';
 var lightYellow  = '#faabc3';

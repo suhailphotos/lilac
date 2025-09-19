@@ -102,7 +102,7 @@ return {
       ["subtext0"] = "#a6adc8",
       ["overlay2"] = "#9399b2",
       ["overlay1"] = "#7f849c",
-      ["overlay0"] = "#57575b",
+      ["overlay0"] = "#626271",
       ["surface2"] = "#585b70",
       ["surface1"] = "#45475a",
       ["surface0"] = "#2b2b2d",
@@ -119,8 +119,8 @@ return {
         "#94b3fb",
         "#c995f9",
         "#9c98f8",
-        "#9796a1",
-        "#57575b",
+        "#a09eb7",
+        "#626271",
         "#fbbbe6",
         "#bbdafb",
         "#faabc3",
@@ -137,13 +137,13 @@ return {
     ["highlights"] = {
 
     },
-    ["comment"] = "#57575b",
+    ["comment"] = "#626271",
     ["tmux"] = {
-      ["status_fg"] = "#9796a1",
-      ["status_bg"] = "#57575b",
+      ["status_fg"] = "#a09eb7",
+      ["status_bg"] = "#626271",
       ["message_fg"] = "#ebeaf3",
-      ["message_bg"] = "#57575b",
-      ["pane_border"] = "#57575b",
+      ["message_bg"] = "#626271",
+      ["pane_border"] = "#626271",
       ["pane_active_border"] = "#a5befa"
     }
   },
