@@ -22,16 +22,16 @@ return {
     ["cat_overrides"] = {
       ["pink"] = "#d399c9",
       ["mauve"] = "#e3a2d7",
-      ["lavender"] = "#aa9dc5",
+      ["lavender"] = "#b5aad3",
       ["red"] = "#bf6f89",
       ["maroon"] = "#f291b0",
       ["yellow"] = "#f4b7ad",
       ["peach"] = "#da939b",
       ["green"] = "#89bec8",
       ["teal"] = "#9baee5",
-      ["sky"] = "#81a1c1",
-      ["sapphire"] = "#8ea8d3",
-      ["blue"] = "#81a1c1",
+      ["sky"] = "#aad1f8",
+      ["sapphire"] = "#9ab4e2",
+      ["blue"] = "#98bbde",
       ["text"] = "#c6d0f5",
       ["subtext1"] = "#b5bfe2",
       ["subtext0"] = "#a5adce",
@@ -51,7 +51,7 @@ return {
         "#bf6f89",
         "#89bec8",
         "#f4b7ad",
-        "#81a1c1",
+        "#98bbde",
         "#d399c9",
         "#9baee5",
         "#babec3",
@@ -59,7 +59,7 @@ return {
         "#f291b0",
         "#ade3dd",
         "#fac4bc",
-        "#81a1c1",
+        "#aad1f8",
         "#e3a2d7",
         "#b9c8f2",
         "#eceff4"
@@ -79,7 +79,7 @@ return {
       ["message_fg"] = "#d8dee9",
       ["message_bg"] = "#4c566a",
       ["pane_border"] = "#4c566a",
-      ["pane_active_border"] = "#81a1c1"
+      ["pane_active_border"] = "#aad1f8"
     }
   },
   ["lilac-nightbloom"] = {
