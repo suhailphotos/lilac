@@ -2,16 +2,16 @@
 // Lilac lilac-nightbloom (Nightbloom) — variant: mocha
 // Source: palettes/lilac-nightbloom.yml
 
-var black        = '#303034';
+var black        = '#2b2b2d';
 var red          = '#fba6df';
 var green        = '#9bcafb';
 var yellow       = '#fcb2c7';
 var blue         = '#94b3fb';
 var magenta      = '#c995f9';
 var cyan         = '#9c98f8';
-var white        = '#b4b3c0';
+var white        = '#9796a1';
 
-var lightBlack   = '#6c6c78';
+var lightBlack   = '#57575b';
 var lightRed     = '#fbbbe6';
 var lightGreen   = '#bbdafb';
 var lightYellow  = '#faabc3';
