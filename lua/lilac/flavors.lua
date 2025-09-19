@@ -129,7 +129,7 @@ return {
         "#9c98f8",
         "#dcd9f0"
       },
-      ["background"] = "#1e1c1f",
+      ["background"] = "#1f1e1f",
       ["foreground"] = "#ebeaf3",
       ["cursor"] = "#ebeaf3",
       ["cursor_text"] = "#ffffff"

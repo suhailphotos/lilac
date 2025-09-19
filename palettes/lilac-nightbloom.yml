@@ -21,7 +21,7 @@ terminal:
     - "#c995f9"  # 13
     - "#9c98f8"  # 14
     - "#dcd9f0"  # 15
-  background: "#1e1c1f"
+  background: "#1f1e1f"
   foreground: "#ebeaf3"
   cursor:     "#ebeaf3"
   cursor_text: "#ffffff"

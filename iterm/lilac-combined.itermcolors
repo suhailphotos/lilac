@@ -648,9 +648,9 @@
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>0.10980392156862745</real>
-		<key>Red Component</key>
 		<real>0.11764705882352941</real>
+		<key>Red Component</key>
+		<real>0.12156862745098039</real>
 	</dict>
 	<key>Background Color (Light)</key>
 	<dict>
@@ -726,9 +726,9 @@
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>0.10980392156862745</real>
-		<key>Red Component</key>
 		<real>0.11764705882352941</real>
+		<key>Red Component</key>
+		<real>0.12156862745098039</real>
 	</dict>
 	<key>Cursor Text Color (Light)</key>
 	<dict>
