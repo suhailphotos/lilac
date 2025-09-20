@@ -2,7 +2,7 @@
 // Lilac lilac-nightbloom (Nightbloom) — variant: mocha
 // Source: palettes/lilac-nightbloom.yml
 
-var black        = '#2b2b2d';
+var black        = '#262628';
 var red          = '#fba6df';
 var green        = '#9bcafb';
 var yellow       = '#fcb2c7';
@@ -11,7 +11,7 @@ var magenta      = '#c995f9';
 var cyan         = '#9c98f8';
 var white        = '#a09eb7';
 
-var lightBlack   = '#5e5e6d';
+var lightBlack   = '#51515e';
 var lightRed     = '#fbbbe6';
 var lightGreen   = '#bbdafb';
 var lightYellow  = '#faabc3';
@@ -28,6 +28,6 @@ t.prefs_.set('color-palette-overrides', [
 ]);
 
 t.prefs_.set('foreground-color', '#ebeaf3');
-t.prefs_.set('background-color', '#1f1e1f');
+t.prefs_.set('background-color', '#18181a');
 t.prefs_.set('cursor-color', 'rgba(235, 234, 243, 0.70)');
 t.prefs_.set('cursor-blink', false);
