@@ -11,7 +11,7 @@ var magenta      = '#d399c9';
 var cyan         = '#9baee5';
 var white        = '#babec3';
 
-var lightBlack   = '#616d84';
+var lightBlack   = '#586173';
 var lightRed     = '#f291b0';
 var lightGreen   = '#ade3dd';
 var lightYellow  = '#fac4bc';
