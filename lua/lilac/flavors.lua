@@ -37,7 +37,7 @@ return {
       ["subtext0"] = "#a5adce",
       ["overlay2"] = "#949cbb",
       ["overlay1"] = "#838ba7",
-      ["overlay0"] = "#5b677f",
+      ["overlay0"] = "#616d84",
       ["surface2"] = "#626880",
       ["surface1"] = "#51576d",
       ["surface0"] = "#3b4252",
@@ -55,7 +55,7 @@ return {
         "#d399c9",
         "#9baee5",
         "#babec3",
-        "#5b677f",
+        "#616d84",
         "#f291b0",
         "#ade3dd",
         "#fac4bc",
@@ -64,7 +64,7 @@ return {
         "#b9c8f2",
         "#eceff4"
       },
-      ["background"] = "#292f3b",
+      ["background"] = "#2c323e",
       ["foreground"] = "#d8dee9",
       ["cursor"] = "#d8dee9",
       ["cursor_text"] = "#ffffff"
@@ -72,13 +72,13 @@ return {
     ["highlights"] = {
 
     },
-    ["comment"] = "#5b677f",
+    ["comment"] = "#616d84",
     ["tmux"] = {
       ["status_fg"] = "#babec3",
-      ["status_bg"] = "#5b677f",
+      ["status_bg"] = "#616d84",
       ["message_fg"] = "#d8dee9",
-      ["message_bg"] = "#5b677f",
-      ["pane_border"] = "#5b677f",
+      ["message_bg"] = "#616d84",
+      ["pane_border"] = "#616d84",
       ["pane_active_border"] = "#aad1f8"
     }
   },
