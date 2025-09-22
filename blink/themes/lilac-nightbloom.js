@@ -2,23 +2,23 @@
 // Lilac lilac-nightbloom (Nightbloom) — variant: mocha
 // Source: palettes/lilac-nightbloom.yml
 
-var black        = '#26262a';
-var red          = '#fba6df';
-var green        = '#9bcafb';
-var yellow       = '#fcc5b2';
-var blue         = '#93a8da';
-var magenta      = '#c995f9';
-var cyan         = '#9c98f8';
-var white        = '#a09eb7';
+var black        = '#2c2d38';
+var red          = '#fb9cdc';
+var green        = '#aef0ff';
+var yellow       = '#fcc7b2';
+var blue         = '#98b5f9';
+var magenta      = '#e796fe';
+var cyan         = '#b69afd';
+var white        = '#9b9ca1';
 
-var lightBlack   = '#494957';
+var lightBlack   = '#626271';
 var lightRed     = '#fbbbe6';
-var lightGreen   = '#bbdafb';
-var lightYellow  = '#fac8ab';
+var lightGreen   = '#b8e8ff';
+var lightYellow  = '#ffd4c4';
 var lightBlue    = '#c0d1fa';
-var lightMagenta = '#c995f9';
-var lightCyan    = '#9c98f8';
-var lightWhite   = '#dcd9f0';
+var lightMagenta = '#eba4ff';
+var lightCyan    = '#b89cff';
+var lightWhite   = '#e8e6f6';
 
 t.prefs_.set('color-palette-overrides', [
   black, red, green, yellow,
@@ -27,7 +27,7 @@ t.prefs_.set('color-palette-overrides', [
   lightBlue, lightMagenta, lightCyan, lightWhite
 ]);
 
-t.prefs_.set('foreground-color', '#ebeaf3');
-t.prefs_.set('background-color', '#17171b');
-t.prefs_.set('cursor-color', 'rgba(235, 234, 243, 0.70)');
+t.prefs_.set('foreground-color', '#ffffff');
+t.prefs_.set('background-color', '#21222e');
+t.prefs_.set('cursor-color', 'rgba(255, 255, 255, 0.70)');
 t.prefs_.set('cursor-blink', false);

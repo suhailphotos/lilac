@@ -5,25 +5,25 @@ comment: "@ansi[8]"
 
 terminal:
   colors:
-    - "#26262a"  # 0
-    - "#fba6df"  # 1
-    - "#9bcafb"  # 2
-    - "#fcc5b2"  # 3
-    - "#93a8da"  # 4
-    - "#c995f9"  # 5
-    - "#9c98f8"  # 6
-    - "#a09eb7"  # 7
-    - "#494957"  # 8
+    - "#2c2d38"  # 0
+    - "#fb9cdc"  # 1
+    - "#aef0ff"  # 2
+    - "#fcc7b2"  # 3
+    - "#98b5f9"  # 4
+    - "#e796fe"  # 5
+    - "#b69afd"  # 6
+    - "#9b9ca1"  # 7
+    - "#626271"  # 8
     - "#fbbbe6"  # 9
-    - "#bbdafb"  # 10
-    - "#fac8ab"  # 11
+    - "#b8e8ff"  # 10
+    - "#ffd4c4"  # 11
     - "#c0d1fa"  # 12
-    - "#c995f9"  # 13
-    - "#9c98f8"  # 14
-    - "#dcd9f0"  # 15
-  background: "#17171b"
-  foreground: "#ebeaf3"
-  cursor:     "#ebeaf3"
+    - "#eba4ff"  # 13
+    - "#b89cff"  # 14
+    - "#e8e6f6"  # 15
+  background: "#21222e"
+  foreground: "#ffffff"
+  cursor:     "#ffffff"
   cursor_text: "#ffffff"
 
 catppuccin_overrides:
