@@ -28,6 +28,6 @@ t.prefs_.set('color-palette-overrides', [
 ]);
 
 t.prefs_.set('foreground-color', '#ffffff');
-t.prefs_.set('background-color', '#21222e');
+t.prefs_.set('background-color', '#1c1c23');
 t.prefs_.set('cursor-color', 'rgba(255, 255, 255, 0.70)');
 t.prefs_.set('cursor-blink', false);
