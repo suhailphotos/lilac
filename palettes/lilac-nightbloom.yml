@@ -13,7 +13,7 @@ terminal:
     - "#c995f9"  # 5
     - "#9c98f8"  # 6
     - "#a09eb7"  # 7
-    - "#43434e"  # 8
+    - "#494957"  # 8
     - "#fbbbe6"  # 9
     - "#bbdafb"  # 10
     - "#fac8ab"  # 11
@@ -21,7 +21,7 @@ terminal:
     - "#c995f9"  # 13
     - "#9c98f8"  # 14
     - "#dcd9f0"  # 15
-  background: "#1e1e1f"
+  background: "#17171b"
   foreground: "#ebeaf3"
   cursor:     "#ebeaf3"
   cursor_text: "#ffffff"
