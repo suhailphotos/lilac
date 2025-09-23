@@ -5,7 +5,7 @@ comment: "@ansi[8]"
 
 terminal:
   colors:
-    - "#2c2d38"  # 0
+    - "#262730"  # 0
     - "#fb9cdc"  # 1
     - "#aef0ff"  # 2
     - "#fcc7b2"  # 3
@@ -20,10 +20,10 @@ terminal:
     - "#c0d1fa"  # 12
     - "#eba4ff"  # 13
     - "#b89cff"  # 14
-    - "#e8e6f6"  # 15
-  background: "#1c1c23"
-  foreground: "#ffffff"
-  cursor:     "#ffffff"
+    - "#e0def5"  # 15
+  background: "#1d1f24"
+  foreground: "#e6e4f6"
+  cursor:     "#e6e4f6"
   cursor_text: "#ffffff"
 
 catppuccin_overrides:

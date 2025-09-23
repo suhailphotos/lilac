@@ -105,14 +105,14 @@ return {
       ["overlay0"] = "#5e5e6d",
       ["surface2"] = "#585b70",
       ["surface1"] = "#45475a",
-      ["surface0"] = "#2c2d38",
+      ["surface0"] = "#262730",
       ["base"] = "#1e1e2e",
       ["mantle"] = "#181825",
       ["crust"] = "#11111b"
     },
     ["terminal"] = {
       ["colors"] = {
-        "#2c2d38",
+        "#262730",
         "#fb9cdc",
         "#aef0ff",
         "#fcc7b2",
@@ -127,11 +127,11 @@ return {
         "#c0d1fa",
         "#eba4ff",
         "#b89cff",
-        "#e8e6f6"
+        "#e0def5"
       },
-      ["background"] = "#1c1c23",
-      ["foreground"] = "#ffffff",
-      ["cursor"] = "#ffffff",
+      ["background"] = "#1d1f24",
+      ["foreground"] = "#e6e4f6",
+      ["cursor"] = "#e6e4f6",
       ["cursor_text"] = "#ffffff"
     },
     ["highlights"] = {
@@ -141,7 +141,7 @@ return {
     ["tmux"] = {
       ["status_fg"] = "#9b9ca1",
       ["status_bg"] = "#5e5e6d",
-      ["message_fg"] = "#ffffff",
+      ["message_fg"] = "#e6e4f6",
       ["message_bg"] = "#5e5e6d",
       ["pane_border"] = "#5e5e6d",
       ["pane_active_border"] = "#c0d1fa"
