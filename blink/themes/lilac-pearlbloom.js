@@ -2,7 +2,7 @@
 // Lilac lilac-pearlbloom (Pearlbloom) — variant: latte
 // Source: palettes/lilac-pearlbloom.yml
 
-var black        = '#e7e6e6';
+var black        = '#dededf';
 var red          = '#a73157';
 var green        = '#0e545b';
 var yellow       = '#c16a48';
@@ -11,7 +11,7 @@ var magenta      = '#891d80';
 var cyan         = '#6b35a8';
 var white        = '#303132';
 
-var lightBlack   = '#868686';
+var lightBlack   = '#757575';
 var lightRed     = '#780f2f';
 var lightGreen   = '#174145';
 var lightYellow  = '#ae6418';
@@ -28,6 +28,6 @@ t.prefs_.set('color-palette-overrides', [
 ]);
 
 t.prefs_.set('foreground-color', '#020202');
-t.prefs_.set('background-color', '#f7f7f8');
+t.prefs_.set('background-color', '#f1f2f3');
 t.prefs_.set('cursor-color', 'rgba(2, 2, 2, 0.70)');
 t.prefs_.set('cursor-blink', false);
