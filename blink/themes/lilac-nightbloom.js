@@ -5,19 +5,19 @@
 var black        = '#26233a';
 var red          = '#eb6f92';
 var green        = '#31748f';
-var yellow       = '#f9bc98';
-var blue         = '#99cbeb';
-var magenta      = '#c4a7e7';
-var cyan         = '#ebaac1';
+var yellow       = '#ffbcaf';
+var blue         = '#98c3ff';
+var magenta      = '#e495ef';
+var cyan         = '#99cbeb';
 var white        = '#e0def4';
 
 var lightBlack   = '#6e6a86';
 var lightRed     = '#eb6f92';
 var lightGreen   = '#31748f';
-var lightYellow  = '#fdbb96';
-var lightBlue    = '#9ad0f4';
-var lightMagenta = '#c4a7e7';
-var lightCyan    = '#ebbac9';
+var lightYellow  = '#ffc6b1';
+var lightBlue    = '#a0c7ff';
+var lightMagenta = '#f4a7fe';
+var lightCyan    = '#9ad0f4';
 var lightWhite   = '#e0def4';
 
 t.prefs_.set('color-palette-overrides', [
