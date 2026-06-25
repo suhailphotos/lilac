@@ -1,0 +1,1060 @@
+/* Lilac Pearlbloom — GitHub structural base */
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', 'SF Pro', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+:root {
+    color-scheme: light;
+
+    --lilac-bg: #ffffff;
+    --lilac-surface: #f7f7f7;
+    --lilac-code-bg: #f8f8f8;
+    --lilac-inline-code-bg: #f1f1f1;
+    --lilac-border: #e5e5e5;
+    --lilac-text: #020202;
+    --lilac-code-text: #020202;
+    --lilac-muted: #757575;
+    --lilac-selection: #717476;
+    --lilac-selection-text: #ffffff;
+    --lilac-cursor: #7f7791;
+
+    --lilac-heading-1: #8a1280;
+    --lilac-heading-2: #3275a6;
+    --lilac-heading-3: #891d80;
+    --lilac-heading-4: #6b35a8;
+    --lilac-heading-5: #c16a48;
+    --lilac-link: #3275a6;
+    --lilac-link-hover: #891d80;
+    --lilac-strong: #8a1280;
+    --lilac-emphasis: #4d158f;
+    --lilac-accent: #891d80;
+    --lilac-secondary-accent: #6b35a8;
+
+    --syntax-comment: #757575;
+    --syntax-keyword: #891d80;
+    --syntax-number: #c16a48;
+    --syntax-string: #0e545b;
+    --syntax-variable: #020202;
+    --syntax-property: #3275a6;
+    --syntax-operator: #8a1280;
+    --syntax-type: #6b35a8;
+    --syntax-error-bg: #a73157;
+    --syntax-error-text: #ffffff;
+
+    --side-bar-bg-color: var(--lilac-surface);
+    --control-text-color: var(--lilac-text);
+    --bg-color: var(--lilac-bg);
+    --text-color: var(--lilac-text);
+    --md-char-color: var(--lilac-muted);
+    --meta-content-color: var(--lilac-muted);
+    --primary-color: var(--lilac-link);
+    --item-hover-bg-color: #eeeeee;
+    --active-file-bg-color: #eeeeee;
+    --active-file-text-color: var(--lilac-text);
+    --window-border: var(--lilac-border);
+}
+
+
+/* =========================================================
+   Lilac overrides
+   Structural base: Typora GitHub theme
+   ========================================================= */
+
+:root {
+    --font-body: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-code: "SF Mono", ui-monospace, Menlo, Monaco, monospace;
+
+    --type-body-size: 16px;
+    --type-body-line-height: 1.6;
+    --type-code-size: 0.84em;
+    --document-width: 860px;
+}
+
+html {
+    font-size: var(--type-body-size);
+    background: var(--lilac-bg);
+}
+
+body,
+content {
+    background: var(--lilac-bg);
+    color: var(--lilac-text);
+    font-family: var(--font-body);
+    line-height: var(--type-body-line-height);
+}
+
+#write {
+    max-width: var(--document-width);
+    color: var(--lilac-text);
+    font-family: var(--font-body);
+}
+
+@media only screen and (min-width: 1400px) {
+    #write { max-width: 1024px; }
+}
+
+@media only screen and (min-width: 1800px) {
+    #write { max-width: 1200px; }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+.context-menu,
+.megamenu-content,
+footer {
+    color: var(--lilac-text);
+    font-family: var(--font-display);
+}
+
+h1,
+h2 {
+    border-bottom-color: var(--lilac-border);
+}
+
+h1 { color: var(--lilac-heading-1); }
+h2 { color: var(--lilac-heading-2); }
+h3 { color: var(--lilac-heading-3); }
+h4 { color: var(--lilac-heading-4); }
+h5 { color: var(--lilac-heading-5); }
+h6 { color: var(--lilac-muted); }
+
+a,
+.md-link,
+.md-url {
+    color: var(--lilac-link);
+}
+
+a:hover {
+    color: var(--lilac-link-hover);
+}
+
+strong { color: var(--lilac-strong); }
+em { color: var(--lilac-emphasis); }
+
+hr {
+    background-color: var(--lilac-border);
+}
+
+blockquote {
+    border-left-color: var(--lilac-accent);
+    color: var(--lilac-muted);
+}
+
+blockquote blockquote {
+    border-left-color: var(--lilac-secondary-accent);
+}
+
+table tr {
+    border-color: var(--lilac-border);
+}
+
+table tr:nth-child(2n),
+thead {
+    background-color: var(--lilac-surface);
+}
+
+table th,
+table td {
+    border-color: var(--lilac-border);
+}
+
+table th {
+    color: var(--lilac-heading-3);
+    font-family: var(--font-display);
+}
+
+/* Inline code and fenced blocks retain the GitHub theme's stable geometry. */
+.md-fences,
+code,
+tt {
+    border-color: var(--lilac-border);
+    background-color: var(--lilac-code-bg);
+    color: var(--lilac-code-text);
+    font-family: var(--font-code);
+    font-size: var(--type-code-size);
+}
+
+code {
+    background-color: var(--lilac-inline-code-bg);
+}
+
+.md-fences {
+    background-color: var(--lilac-code-bg);
+    color: var(--lilac-code-text);
+}
+
+#write pre.md-meta-block {
+    background-color: var(--lilac-surface);
+    color: var(--lilac-muted);
+    font-family: var(--font-code);
+}
+
+.CodeMirror,
+.CodeMirror-code,
+.CodeMirror-lines,
+.CodeMirror pre,
+.cm-s-inner,
+.cm-s-inner.CodeMirror {
+    background: transparent;
+    color: var(--lilac-code-text);
+    font-family: var(--font-code);
+}
+
+.CodeMirror-gutters,
+.cm-s-inner .CodeMirror-gutters {
+    border-right-color: var(--lilac-border);
+    background: var(--lilac-code-bg);
+}
+
+.CodeMirror-linenumber,
+.cm-s-inner .CodeMirror-linenumber {
+    color: var(--lilac-muted);
+}
+
+.CodeMirror-cursor,
+.cm-s-inner .CodeMirror-cursor {
+    border-left-color: var(--lilac-cursor);
+}
+
+.CodeMirror-selected,
+.cm-s-inner .CodeMirror-selected,
+.cm-s-inner.CodeMirror-focused .CodeMirror-selected {
+    background: var(--lilac-selection);
+}
+
+/* Syntax palette */
+.cm-comment,
+.cm-quote,
+.cm-s-inner .cm-comment,
+.cm-s-inner .cm-quote {
+    color: var(--syntax-comment);
+    font-style: italic;
+}
+
+.cm-keyword,
+.cm-tag,
+.cm-builtin,
+.cm-s-inner .cm-keyword,
+.cm-s-inner .cm-tag,
+.cm-s-inner .cm-builtin {
+    color: var(--syntax-keyword);
+}
+
+.cm-atom,
+.cm-number,
+.cm-s-inner .cm-atom,
+.cm-s-inner .cm-number {
+    color: var(--syntax-number);
+}
+
+.cm-string,
+.cm-string-2,
+.cm-s-inner .cm-string,
+.cm-s-inner .cm-string-2 {
+    color: var(--syntax-string);
+}
+
+.cm-variable,
+.cm-variable-2,
+.cm-variable-3,
+.cm-s-inner .cm-variable,
+.cm-s-inner .cm-variable-2,
+.cm-s-inner .cm-variable-3 {
+    color: var(--syntax-variable);
+}
+
+.cm-def,
+.cm-property,
+.cm-attribute,
+.cm-s-inner .cm-def,
+.cm-s-inner .cm-property,
+.cm-s-inner .cm-attribute {
+    color: var(--syntax-property);
+}
+
+.cm-operator,
+.cm-meta,
+.cm-s-inner .cm-operator,
+.cm-s-inner .cm-meta {
+    color: var(--syntax-operator);
+}
+
+.cm-qualifier,
+.cm-type,
+.cm-s-inner .cm-qualifier,
+.cm-s-inner .cm-type {
+    color: var(--syntax-type);
+}
+
+.cm-link,
+.cm-s-inner .cm-link {
+    color: var(--lilac-link);
+}
+
+.cm-error,
+.cm-s-inner .cm-error {
+    color: var(--syntax-error-text);
+    background: var(--syntax-error-bg);
+}
+
+.md-lang {
+    color: var(--syntax-number);
+}
+
+.md-tag,
+.md-image > .md-meta {
+    color: var(--lilac-muted);
+}
+
+#typora-sidebar,
+.mac-seamless-mode #typora-sidebar,
+.sidebar-tabs {
+    background-color: var(--lilac-surface);
+    color: var(--lilac-text);
+    font-family: var(--font-display);
+}
+
+#typora-sidebar {
+    border-right-color: var(--lilac-border);
+}
+
+#typora-quick-open,
+#typora-quick-open-item,
+.ty-preferences .window-content {
+    background-color: var(--lilac-surface);
+    border-color: var(--lilac-border);
+    color: var(--lilac-text);
+}
+
+.dropdown-menu .divider {
+    border-color: var(--lilac-border);
+}
+
+::selection {
+    background: var(--lilac-selection);
+    color: var(--lilac-selection-text);
+}
+
+.mac-os #write {
+    caret-color: var(--lilac-cursor);
+}
+
+
+/* =========================================================
+   Compact fenced-code geometry
+   ========================================================= */
+
+.md-fences {
+    margin-top: 1.15rem;
+    margin-bottom: 1.15rem;
+    padding: 14px 18px;
+    border-radius: 8px;
+    line-height: 1.52;
+}
+
+.md-fences .CodeMirror-lines {
+    padding: 0;
+}
+
+.md-fences .CodeMirror pre,
+.md-fences pre.CodeMirror-line,
+.md-fences .CodeMirror-line,
+.md-fences .CodeMirror-line-like {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    line-height: 1.52;
+}
+
+/* Refined inline code geometry */
+:not(pre) > code {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.18em 0.38em 0.20em;
+    border: 0;
+    border-radius: 5px;
+    background: #f1f1f1;
+    font-family: var(--code-font);
+    font-size: 0.88em;
+    font-weight: 500;
+    line-height: 1.08;
+    vertical-align: 0.03em;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.055);
+}
+
+/*
+ * Inline code inside headings needs a little more internal space,
+ * while the heading's own border and layout remain unchanged.
+ */
+#write h1 code,
+#write h2 code,
+#write h3 code,
+#write h4 code,
+#write h5 code,
+#write h6 code {
+    padding: 0.16em 0.30em 0.20em;
+    line-height: 1.04;
+    vertical-align: 0.02em;
+}
+
+/* =========================================================
+   Unified framed geometry and code typography
+   ========================================================= */
+
+:root {
+    --frame-radius: 4px;
+}
+
+/*
+ * All visible framed surfaces use the same corner radius.
+ */
+.md-fences,
+table,
+blockquote,
+pre.md-meta-block,
+.md-toc,
+#md-searchpanel,
+.modal-content,
+.popover,
+.auto-suggest-container,
+input,
+textarea,
+select,
+kbd,
+code,
+tt {
+    border-radius: var(--frame-radius);
+}
+
+/*
+ * Preserve a single outer frame around tables.
+ * Cell corners should not create separate rounded boxes.
+ */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+table th,
+table td,
+table tr {
+    border-radius: 0;
+}
+
+table thead tr:first-child th:first-child {
+    border-top-left-radius: var(--frame-radius);
+}
+
+table thead tr:first-child th:last-child {
+    border-top-right-radius: var(--frame-radius);
+}
+
+table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: var(--frame-radius);
+}
+
+table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: var(--frame-radius);
+}
+
+/*
+ * Every Markdown code form must use SF Mono.
+ * The !important is intentional because Typora and heading/table rules
+ * can otherwise override the font family.
+ */
+code,
+tt,
+kbd,
+.md-code,
+.md-fences,
+.md-fences *,
+pre,
+pre *,
+.CodeMirror,
+.CodeMirror *,
+.cm-s-inner,
+.cm-s-inner *,
+#typora-source,
+#typora-source * {
+    font-family:
+        "SF Mono",
+        ui-monospace,
+        Menlo,
+        Monaco,
+        monospace !important;
+    font-variant-ligatures: none;
+}
+
+/*
+ * Inline code, including code inside headings, tables and lists.
+ */
+:not(pre) > code,
+:not(pre) > tt,
+#write h1 code,
+#write h2 code,
+#write h3 code,
+#write h4 code,
+#write h5 code,
+#write h6 code,
+#write table code,
+#write li code,
+#write blockquote code {
+    display: inline-block;
+    font-family:
+        "SF Mono",
+        ui-monospace,
+        Menlo,
+        Monaco,
+        monospace !important;
+    font-size: 0.86em;
+    font-weight: 500;
+    line-height: 1.08;
+    padding: 0.16em 0.34em 0.19em;
+    vertical-align: 0.02em;
+    border-radius: var(--frame-radius);
+}
+
+/*
+ * Fenced blocks use the same radius but retain their larger padding.
+ */
+.md-fences,
+pre.md-fences {
+    border-radius: var(--frame-radius);
+}
+
+/*
+ * CodeMirror's internal lines must remain frameless.
+ */
+.md-fences .CodeMirror,
+.md-fences .CodeMirror-scroll,
+.md-fences .CodeMirror-sizer,
+.md-fences .CodeMirror-lines,
+.md-fences .CodeMirror-code,
+.md-fences .CodeMirror pre,
+.md-fences pre.CodeMirror-line,
+.md-fences .CodeMirror-line,
+.md-fences .CodeMirror-line-like {
+    border-radius: 0;
+}
+
+/* Borderless application surfaces */
+
+:root {
+    --content-frame-bg: #f8f8f8;
+    --content-separator: rgba(0, 0, 0, 0.075);
+    --interactive-border: rgba(0, 0, 0, 0.14);
+}
+
+/*
+ * Passive content surfaces use contrast rather than an outline.
+ */
+.md-fences,
+pre.md-fences,
+table,
+blockquote,
+pre.md-meta-block,
+.md-toc {
+    border: 0 !important;
+    outline: 0;
+    box-shadow: none;
+    background: var(--content-frame-bg);
+}
+
+/*
+ * Keep the unified 6px radius established earlier.
+ */
+.md-fences,
+pre.md-fences,
+table,
+blockquote,
+pre.md-meta-block,
+.md-toc {
+    border-radius: var(--frame-radius);
+}
+
+/*
+ * Tables remain readable through subtle internal separators,
+ * without an outside frame.
+ */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    border: 0;
+    border-right: 1px solid var(--content-separator);
+    border-bottom: 1px solid var(--content-separator);
+}
+
+table th:last-child,
+table td:last-child {
+    border-right: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table thead {
+    background: color-mix(
+        in srgb,
+        var(--content-frame-bg) 88%,
+        var(--lilac-text) 12%
+    );
+}
+
+/*
+ * Inline code is a compact filled surface without a stroke.
+ */
+:not(pre) > code,
+:not(pre) > tt,
+#write h1 code,
+#write h2 code,
+#write h3 code,
+#write h4 code,
+#write h5 code,
+#write h6 code,
+#write table code,
+#write li code,
+#write blockquote code {
+    border: 0 !important;
+    outline: 0;
+    background: #f1f1f1;
+    box-shadow: none;
+}
+
+/*
+ * Interactive controls retain a restrained border because their
+ * boundaries and focus state need to remain obvious.
+ */
+input,
+textarea,
+select,
+#md-searchpanel input,
+.modal-content,
+.popover,
+.auto-suggest-container {
+    border: 1px solid var(--interactive-border);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--lilac-blue);
+    outline: none;
+    box-shadow: 0 0 0 2px color-mix(
+        in srgb,
+        var(--lilac-blue) 28%,
+        transparent
+    );
+}
+
+/*
+ * CodeMirror's internal elements must remain completely frameless.
+ */
+.md-fences .CodeMirror,
+.md-fences .CodeMirror-scroll,
+.md-fences .CodeMirror-sizer,
+.md-fences .CodeMirror-lines,
+.md-fences .CodeMirror-code,
+.md-fences .CodeMirror pre,
+.md-fences pre.CodeMirror-line,
+.md-fences .CodeMirror-line,
+.md-fences .CodeMirror-line-like {
+    border: 0 !important;
+    outline: 0;
+    box-shadow: none;
+}
+
