@@ -49,3 +49,4 @@ From the repository root:
 
 ```bash
 ./scripts/install_typora_themes.py
+```
